@@ -1,0 +1,496 @@
+[
+  {
+    "name": "Luz de Ressonância",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Produz brilho curto identificável; revela o conjurador.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Sinais",
+      "subcategory": "Luz",
+      "difficulty": 1,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Faísca de Éter",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Cria faísca sobre condutor; não causa dano direto.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Sinais",
+      "subcategory": "Luz",
+      "difficulty": 1,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Silêncio de Rádio",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Gera ruído em uma frequência por uma ação, desde que seja possível.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Interferência",
+      "subcategory": "Comunicações",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Falso Eco",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Cria som breve a curta distância; é contestável.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Interferência",
+      "subcategory": "Som",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Traço Azul",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Realça vestígio ritualístico sob iluminação adequada.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Vestígios",
+      "difficulty": 1,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Ouvido do Ferro",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Detecta vibração anômala em metal próximo.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Máquinas",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Ponto Frio",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Identifica condensação suspeita ligada a fenômeno recente.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Clima",
+      "difficulty": 1,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Lâmina de Poeira",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Ergue poeira para obstruir visão por instantes, sem criar cobertura sólida.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Defesa",
+      "subcategory": "Cobertura",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Braço de Vapor",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Aciona válvula acessível à distância curta; requer aparato.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Defesa",
+      "subcategory": "Máquinas",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Pulso Estático",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Perturba instrumento elétrico exposto por um instante.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Interferência",
+      "subcategory": "Máquinas",
+      "difficulty": 2,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Fagulha Falsa",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Imita clarão de tiro distante sem projétil.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Sinais",
+      "subcategory": "Engodo",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Aço Frio",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Resfria peça de metal aquecida e acessível.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Proteção",
+      "subcategory": "Ferramentas",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Tinta Espiritual",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Revela marca oculta se houver traço etérico residual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Documentos",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Sombra de Fumaça",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Aumenta fumaça existente e favorece ocultação; sem bônus cumulativo.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Defesa",
+      "subcategory": "Camuflagem",
+      "difficulty": 2,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Roda dos Perdidos",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Aponta caminho percorrido anteriormente por um integrante.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Orientação",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Sinal do Regresso",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Cria marca luminosa curta para aliado com linha de visão.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Sinais",
+      "subcategory": "Localização",
+      "difficulty": 1,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Bússola Morta",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Desorienta bússola desprotegida em curto alcance.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Interferência",
+      "subcategory": "Orientação",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Pêndulo de Ossos",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Aponta presença próxima de restos mortais não identificados.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Mortos",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Eco de Ordem",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Reproduz comando do próprio conjurador; não controla mentes.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Comando",
+      "subcategory": "Disciplina",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Fio de Vigília",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Estabelece alarme ritual localizado, visível a quem o examinar.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Proteção",
+      "subcategory": "Alarme",
+      "difficulty": 2,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Lacre Incandescente",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Aquece símbolo ritual para indicar violação.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Proteção",
+      "subcategory": "Selos",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Roubo de Clarão",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Apaga chama pequena por instantes, sem afetar incêndios.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Interferência",
+      "subcategory": "Luz",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Ímã do Sopro",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Redireciona vapor de tubulação danificada por instante.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Máquinas",
+      "subcategory": "Vapor",
+      "difficulty": 3,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Trama da Última Voz",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Permite ouvir fragmento de voz retido em cristal ritual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Mensagens",
+      "difficulty": 3,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Ângulo Obscuro",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Projeta sombra limitada para ocultação, não concede invisibilidade.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Defesa",
+      "subcategory": "Ocultação",
+      "difficulty": 3,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Espelho do Sentinela",
+    "type": "magia",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Reflete brilho etérico em resposta a presença anômala.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Proteção",
+      "subcategory": "Alarme",
+      "difficulty": 3,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  }
+]

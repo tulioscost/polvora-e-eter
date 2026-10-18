@@ -1,0 +1,806 @@
+[
+  {
+    "name": "Capacete de aço",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>proteção contextual. não soma RD geral a colete; protege efeito localizado se anunciado</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Máscara filtrante fictícia",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita travessia. precisa Filtros em exposição extensa</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Óculos de escuta espectral",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>revela presença. exige pesquisa/energia; não atinge invisíveis automaticamente</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Binóculo de campo",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1d6 reconhecimento preparado. 1/cena; não soma ferramenta pela mesma função</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Luneta de atirador",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita PREC. não concede bônus por si só, precisa descanso/apoio</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Rádio de mochila",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita contato. somente com sinal ≥50%, salvo circuito local</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Rádio de posto",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1d6 sinal preparado. 1/cena; infraestrutura elétrica</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Bobina de telefone de campanha",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>contato cabeado. depende de linha íntegra</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Kit médico compacto",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita estabilização. consome Medicina conforme procedimento</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Mochila de cirurgião",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1d6 tratamento preparado. uma vez/cena, local acessível</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Ferramentas de sapador",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita obra. pode conceder +1d6 se a ação já habilitada</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Caixa de manutenção de motores",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1d6 manutenção. 1/cena, Peças para reparo estável</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Kit de criptografia",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita decifração. exige INT + Criptografia e material</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Compasso de topógrafo",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1d6 navegação preparada. 1/cena, falha em Zonas Mortas</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Sonda de Ressonância",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>detecta sinal éterico. não determina se a entidade é hostil</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Cápsula de Éter",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1 Carga de Éter. até 3 Cargas pessoais por portador</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Filtro de ar",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1 uso significativo. consumo anunciado em exposição extensa</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Ração de campanha",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1 dia abstrato. não gera bônus mecânico</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C0",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Carga de Munição",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1 uso tático expressivo. consumo conforme ação especial ou cena longa</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Livro de Pactos Regionais",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>pista tradicional. fornece hipótese, não solução sem investigação</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Estojo de selos e giz",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita ritual. material limitado; 1 ritual por uso relevante se consumido</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Lanterna de trincheira blindada",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Ilumina um setor próximo; denuncia presença se exposta.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Exploração",
+      "subcategory": "Iluminação"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Bússola de campanha",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Orienta rotas em terreno sem interferência de Éter.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Exploração",
+      "subcategory": "Navegação"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Binóculo de observador",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Identifica posições distantes com linha de visão.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Reconhecimento",
+      "subcategory": "Óptica"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Periscópio de trincheira",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Observa sem expor completamente o corpo.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Reconhecimento",
+      "subcategory": "Óptica"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Mapa topográfico plastificado",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Registra cobertura, linhas de frente e passagens reconhecidas.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Comando",
+      "subcategory": "Cartografia"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Estojo criptográfico",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Contém cifras de frequência e registros de mensagens.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Comando",
+      "subcategory": "Comunicações"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Telefônico de campo",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Permite ligação por cabos em posições conectadas.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Comando",
+      "subcategory": "Comunicações"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Rádio de mochila valvulado",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Transmite por rádio; depende de energia, frequência e terreno.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Comando",
+      "subcategory": "Comunicações"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cabo de comunicação 100 m",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Instala linha de comunicação de curto alcance.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Comando",
+      "subcategory": "Comunicações"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Kit de trincheira",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Pá dobrável, estacas e facão; escava cobertura com tempo.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Engenharia",
+      "subcategory": "Ferramentas"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Alicate de arame",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Abre passagem em obstáculos de arame com exposição.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Engenharia",
+      "subcategory": "Ferramentas"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Kit de solda portátil",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Permite reparo de campo com Peças disponíveis.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Engenharia",
+      "subcategory": "Reparos"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Detector de pressão mecânico",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Auxilia inspeção de armadilhas e dispositivos.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Engenharia",
+      "subcategory": "Desarme"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Corda de cânhamo 20 m",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Auxilia ancoragem e transposição de valas.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Exploração",
+      "subcategory": "Escalada"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Gancho de escalada",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Permite içar corda em beirais estáveis.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Exploração",
+      "subcategory": "Escalada"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Kit de costura militar",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Recupera fardas e mochilas fora de combate.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Suporte",
+      "subcategory": "Manutenção"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Manta impermeável",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Abriga um soldado da chuva e da lama.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Suporte",
+      "subcategory": "Sobrevivência"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cantina de campanha",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Armazena água; abastecimento é recurso ficcional.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Suporte",
+      "subcategory": "Sobrevivência"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Filtro de água portátil",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Filtra partículas; não neutraliza contaminação sobrenatural.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Suporte",
+      "subcategory": "Sobrevivência"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Máscara de filtro reserva",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Filtro substituível; duração deve ser controlada pelo Narrador.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Proteção",
+      "subcategory": "Respiração"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Óculos de proteção química",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção contra partículas em ambiente tóxico não sobrenatural.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Proteção",
+      "subcategory": "Visão"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Relógio cronógrafo",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Coordena avanço, detonação e retirada.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Comando",
+      "subcategory": "Temporização"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Kit forense de Éter",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Coleta fragmentos para análise posterior.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Ocultismo",
+      "subcategory": "Pesquisa"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Selos de cera de contenção",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Marca portas e indícios; selo sozinho não aprisiona entidades.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Ocultismo",
+      "subcategory": "Contenção"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Livro de campo cifrado",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Documenta testemunhos e padrões de anomalias.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Ocultismo",
+      "subcategory": "Arquivo"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Conjunto de estacas de sinalização",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Marca trilhas, áreas perigosas e minas identificadas.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Engenharia",
+      "subcategory": "Demarcação"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Câmera fotográfica de chapa",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Registra vestígios com necessidade de revelação.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Reconhecimento",
+      "subcategory": "Registro"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Tenda de descontaminação dobrável",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Área de triagem; exige pessoal e insumos.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Suporte",
+      "subcategory": "Saúde"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Bomba manual de drenagem",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Retira água da trincheira ao longo do tempo.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Engenharia",
+      "subcategory": "Escavação"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Bandeiras de sinalização",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Comunicação visual que exige linha de visão.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Comando",
+      "subcategory": "Comunicações"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  }
+]

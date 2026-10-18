@@ -1,10 +1,11 @@
-<div class="pe-root">
+<div class="pe-root pe-dossier">
+ <div class="pe-classification"><span>ALTO COMANDO · SEÇÃO DE INTELIGÊNCIA MILITAR</span><span>ARQUIVO RESTRITO · PE/BRU-04</span></div>
  <header class="pe-header">
-  <img class="pe-portrait" src="{{actor.img}}" alt="Retrato" data-action="editImage" data-edit="img" title="Alterar retrato" />
+  <div class="pe-portrait-frame"><img class="pe-portrait" src="{{actor.img}}" alt="Retrato de {{actor.name}}" data-action="choosePortrait" title="Clique para substituir a foto do personagem" /><button type="button" class="pe-photo-button" data-action="choosePortrait" title="Selecionar ou enviar imagem">ALTERAR FOTO</button></div>
   <div class="pe-heading">
-   <div class="pe-eyebrow">PÓLVORA &amp; ÉTER · ARQUIVO DE CAMPO</div>
+   <div class="pe-eyebrow">PÓLVORA &amp; ÉTER · DOSSIÊ DO PESSOAL</div>
    <input class="pe-name" name="name" value="{{actor.name}}" aria-label="Nome" />
-   <div class="pe-tagline">{{#if isSquad}}Ficha de unidade persistente{{else if isThreat}}Registro de ameaça{{else}}Soldado / agente • Guerra das Cinzas{{/if}}</div>
+   <div class="pe-tagline">{{#if isSquad}}Ficha de unidade persistente{{else if isThreat}}Registro de ameaça{{else}}FICHA DE RECRUTAMENTO · GUERRA DAS CINZAS{{/if}}</div>
   </div>
   {{#unless isSquad}}
    <div class="pe-vitals">
@@ -19,7 +20,7 @@
  <nav class="pe-tabs" aria-label="Abas da ficha">
   {{#each (peTabs isSquad) as |entry|}}<button type="button" data-action="selectTab" data-tab="{{entry.id}}" class="{{#if (peEq ../tab entry.id)}}active{{/if}}">{{entry.label}}</button>{{/each}}
  </nav>
- <div class="pe-body">
+ <div class="pe-body"><div class="pe-paper-meta">DOCUMENTO PE-104 / USO OPERACIONAL <span>BRUMÁRIA · SERVIÇO DAS PORTAS FECHADAS</span></div>
  {{#if isSquad}}
   {{#if (peEq tab 'principal')}}
    <section class="pe-section"><h2>Comando estratégico <small>Operações: {{system.operacoes}}</small></h2><div class="pe-banner">O custo ordinário da saída é 1 Suprimento. A frente só avança por causa anunciada.</div><p><button type="button" data-action="squadDeploy">Registrar saída operacional (−1 Suprimento)</button></p><label>Notas de comando / vínculos <textarea name="system.notes" rows="9">{{system.notes}}</textarea></label></section>
@@ -50,14 +51,18 @@
    <section class="pe-section"><h2>Inventário e armaduras</h2>{{#each inventory.arma as |it|}}<article class="pe-entry" data-item-id="{{it.id}}"><img src="{{it.img}}"><b>{{it.name}}</b><small>Dano {{it.system.damage}}</small><button type="button" data-action="itemOpen">Editar</button><button type="button" data-action="itemDelete">Excluir</button></article>{{/each}}
    {{#each inventory.armadura as |it|}}<article class="pe-entry" data-item-id="{{it.id}}"><img src="{{it.img}}"><b>{{it.name}}</b><small>RD {{it.system.rd}} • durabilidade {{it.system.durability}}%</small><button type="button" data-action="itemEquip">{{#if it.system.equipped}}Desequipar{{else}}Equipar{{/if}}</button><button type="button" data-action="itemOpen">Editar</button></article>{{/each}}
    {{#each inventory.equipamento as |it|}}<article class="pe-entry" data-item-id="{{it.id}}"><img src="{{it.img}}"><b>{{it.name}}</b><button type="button" data-action="itemEquip">{{#if it.system.equipped}}Desequipar{{else}}Equipar{{/if}}</button><button type="button" data-action="itemOpen">Editar</button><button type="button" data-action="itemDelete">Excluir</button></article>{{/each}}
-   <div class="pe-tools"><button type="button" data-action="createItem" data-type="arma">+ Arma</button><button type="button" data-action="createItem" data-type="armadura">+ Armadura</button><button type="button" data-action="createItem" data-type="equipamento">+ Equipamento</button></div></section>
+   <h3>CONSUMÍVEIS · CONTROLE DE ESTOQUE</h3>
+   {{#each inventory.consumivel as |it|}}<article class="pe-entry" data-item-id="{{it.id}}"><img src="{{it.img}}"/><div><b>{{it.name}}</b><small>Quantidade: {{it.system.quantity}}</small></div><button type="button" data-action="itemUse">Consumir 1</button><button type="button" data-action="itemOpen">Editar</button></article>{{/each}}
+   <h3>MUNIÇÃO · CARTUCHOS E CARGAS</h3>
+   {{#each inventory.municao as |it|}}<article class="pe-entry" data-item-id="{{it.id}}"><img src="{{it.img}}"/><div><b>{{it.name}}</b><small>Unidades: {{it.system.quantity}}</small></div><button type="button" data-action="itemUse">Registrar gasto</button><button type="button" data-action="itemOpen">Editar</button></article>{{/each}}
+   <div class="pe-tools"><button type="button" data-action="createItem" data-type="arma">+ Arma</button><button type="button" data-action="createItem" data-type="armadura">+ Armadura</button><button type="button" data-action="createItem" data-type="equipamento">+ Equipamento</button><button type="button" data-action="createItem" data-type="consumivel">+ Consumível</button><button type="button" data-action="createItem" data-type="municao">+ Munição</button></div></section>
   {{/if}}
   {{#if (peEq tab 'dons')}}<section class="pe-section"><h2>Trilha, talentos e especializações</h2><p>Patamares P1 (0 Marcos), P3, P6, P9, P12. Frequência e custos devem obedecer à descrição do talento. Marcadores ativo/usado são estados manuais.</p>
    {{#each inventory.especializacao as |it|}}<article class="pe-entry" data-item-id="{{it.id}}"><b>{{it.name}}</b><small>{{it.system.path}}</small><button type="button" data-action="itemOpen">Abrir</button></article>{{/each}}
    {{#each inventory.talento as |it|}}<article class="pe-entry" data-item-id="{{it.id}}"><div><b>P{{it.system.tier}} · {{it.name}}</b><small>{{it.system.trail}} • {{it.system.usage}}</small></div><div class="pe-entry-actions"><button type="button" data-action="itemToggle">{{#if it.system.active}}Desativar{{else}}Ativar{{/if}}</button><button type="button" data-action="itemUse">Usar</button><button type="button" data-action="itemReset">Rearmar</button><button type="button" data-action="itemOpen">Editar</button></div></article>{{/each}}
    <button type="button" data-action="createItem" data-type="talento">Novo talento</button></section>{{/if}}
-  {{#if (peEq tab 'rituais')}}<section class="pe-section"><h2>Éter e práticas</h2><p>Cargas pessoais disponíveis: {{system.eter}}. O ritual debita Éter mesmo em falha. Rituais não encerram automaticamente missões ou ignoram contramedidas.</p>{{#each inventory.ritual as |it|}}<article class="pe-entry" data-item-id="{{it.id}}"><img src="{{it.img}}"><div><b>{{it.name}}</b><small>D{{it.system.difficulty}} · {{it.system.cost}} Éter</small></div><button type="button" data-action="cast">Executar</button><button type="button" data-action="itemOpen">Editar</button></article>{{/each}}<button type="button" data-action="createItem" data-type="ritual">Novo ritual</button></section>{{/if}}
-  {{#if (peEq tab 'notas')}}<section class="pe-section"><h2>Registro pessoal</h2><textarea name="system.notes" rows="20" placeholder="Vínculos, testemunhos, cicatrizes, ordens recusadas...">{{system.notes}}</textarea></section>{{/if}}
+  {{#if (peEq tab 'rituais')}}<section class="pe-section"><h2>Éter e práticas</h2><p>Cargas pessoais disponíveis: {{system.eter}}. O ritual debita Éter mesmo em falha. Rituais não encerram automaticamente missões ou ignoram contramedidas.</p><h3>MAGIAS DE ÉTER</h3>{{#each inventory.magia as |it|}}<article class="pe-entry" data-item-id="{{it.id}}"><img src="{{it.img}}"><div><b>{{it.name}}</b><small>D{{it.system.difficulty}} · {{it.system.cost}} Éter</small></div><button type="button" data-action="cast">Conjurar</button><button type="button" data-action="itemOpen">Editar</button></article>{{/each}}<h3>RITUAIS E PACTOS</h3>{{#each inventory.ritual as |it|}}<article class="pe-entry" data-item-id="{{it.id}}"><img src="{{it.img}}"><div><b>{{it.name}}</b><small>D{{it.system.difficulty}} · {{it.system.cost}} Éter</small></div><button type="button" data-action="cast">Executar</button><button type="button" data-action="itemOpen">Editar</button></article>{{/each}}<button type="button" data-action="createItem" data-type="ritual">Novo ritual</button><button type="button" data-action="createItem" data-type="magia">Nova magia</button></section>{{/if}}
+  {{#if (peEq tab 'notas')}}<section class="pe-section"><h2>Diário de operações</h2><p>As rolagens e mensagens públicas associadas a este personagem são registradas em seu Journal.</p><button type="button" data-action="openDiary">ABRIR DIÁRIO DE MISSÃO</button><h3>Anotações individuais</h3><textarea name="system.notes" rows="20" placeholder="Vínculos, testemunhos, cicatrizes, ordens recusadas...">{{system.notes}}</textarea></section>{{/if}}
  {{/if}}
  </div>
  <footer class="pe-footer">PÓLVORA &amp; ÉTER • motor CLANDESTINO 5.2.2 adaptado • alfa 0.4 • registro do Serviço das Portas Fechadas</footer>

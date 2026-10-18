@@ -9,8 +9,8 @@ async function rollPool(actor,dice,difficulty,label,info={}){
   const result=evaluateFaces(faces,difficulty);
   const status=result.passed?'SUCESSO':'FALHA';
   const damage=info.damage!==undefined && result.passed?damageAfterArmor(info.damage,Math.min(result.impetus,2),info.rd||0):null;
-  const block=`<div class="pe-chat"><strong>${esc(label)}</strong><div>Reserva ${dice}d6 • D${difficulty} • <b>${status}</b></div><div>Sucessos: ${result.successes} | Ímpetos: ${result.impetus}</div>${damage!==null?`<div>Dano potencial: <strong>${damage}</strong> (bônus de Ímpeto +${Math.min(result.impetus,2)}, a critério do jogador; RD indicada ${info.rd||0}).</div>`:''}<small>Ataque não aplica dano automaticamente. O Narrador confirma alvo, RD, circunstâncias e consumo de Ímpetos.</small></div>`;
-  await r.toMessage({speaker:ChatMessage.getSpeaker({actor}),flavor:block});
+  const block=`<div class="pe-transmission"><div class="pe-radio-label">◉ CANAL TÁTICO · TRANSMISSÃO CRIPTOGRAFADA</div><strong>${esc(label)}</strong><div>Reserva ${dice}d6 • D${difficulty} • <b class="${result.passed?'pe-pass':'pe-fail'}">${status}</b></div><div>Sucessos: ${result.successes} | Ímpetos: ${result.impetus}</div>${damage!==null?`<div>Dano potencial: <strong>${damage}</strong> (bônus de Ímpeto +${Math.min(result.impetus,2)}, a critério do jogador; RD indicada ${info.rd||0}).</div>`:''}<small>Ataque não aplica dano automaticamente. O Narrador confirma alvo, RD, circunstâncias e consumo de Ímpetos.</small></div>`;
+  await r.toMessage({speaker:ChatMessage.getSpeaker({actor}),flavor:block,flags:{[S]:{diceRoll:true}}});
   return result;
 }
 function selectedDifficulty(app){return clamp(app.element?.querySelector('[data-difficulty]')?.value||1,1,5);}
@@ -20,13 +20,37 @@ const itemActions={
   async itemDelete(event,target){if(!this.isEditable)return;const id=target.closest('[data-item-id]')?.dataset.itemId;if(!id)return;const yes=await foundry.applications.api.DialogV2.confirm({window:{title:'Excluir item'},content:'Excluir este item do personagem?'});if(yes)await this.document.deleteEmbeddedDocuments('Item',[id]);},
   async itemEquip(event,target){if(!this.isEditable)return;const it=this.document.items?.get(target.closest('[data-item-id]')?.dataset.itemId);if(it)await it.update({'system.equipped':!it.system.equipped});},
   async itemToggle(event,target){if(!this.isEditable)return;const it=this.document.items?.get(target.closest('[data-item-id]')?.dataset.itemId);if(it){const state=!it.system.active;await it.update({'system.active':state});tell(`${it.name}: ${state?'ativado':'desativado'}. Efeitos condicionais exigem a situação descrita no item.`, 'info');}},
-  async itemUse(event,target){if(!this.isEditable)return;const it=this.document.items?.get(target.closest('[data-item-id]')?.dataset.itemId);if(!it)return;if(it.system.spent){tell('Uso já consumido.');return;}await it.update({'system.spent':true});await ChatMessage.create({speaker:ChatMessage.getSpeaker({actor:this.document}),content:`<strong>${esc(it.name)}</strong> — utilização registrada. ${it.system.description||''}`});},
+  async itemUse(event,target){
+   if(!this.document.isOwner)return;
+   const it=this.document.items?.get(target.closest('[data-item-id]')?.dataset.itemId);if(!it)return;
+   if(it.type==='consumivel'||it.type==='municao'){
+     const quantity=Math.max(0,Number(it.system.quantity)||0);
+     if(quantity<1)return tell('Sem unidades disponíveis.');
+     await it.update({'system.quantity':quantity-1});
+     await ChatMessage.create({speaker:ChatMessage.getSpeaker({actor:this.document}),content:`<div class="pe-transmission"><b>LOGÍSTICA | CONSUMO REGISTRADO</b><p>${esc(it.name)}: -1 unidade. Restante: ${quantity-1}.</p><small>Consequências dependem das regras e do Narrador.</small></div>`});
+   }else{
+     if(it.system.spent)return tell('Uso já consumido.');
+     await it.update({'system.spent':true});
+     await ChatMessage.create({speaker:ChatMessage.getSpeaker({actor:this.document}),content:`<div class="pe-transmission"><b>RELATÓRIO DE EMPREGO</b><p>${esc(it.name)} — utilização registrada.</p></div>`});
+   }
+  },
   async itemReset(event,target){if(!this.isEditable)return;const it=this.document.items?.get(target.closest('[data-item-id]')?.dataset.itemId);if(it)await it.update({'system.spent':false});},
   async createItem(event,target){if(!this.isEditable)return;const t=target.dataset.type||'equipamento';const it=await this.document.createEmbeddedDocuments('Item',[{name:`Novo(a) ${t}`,type:t}]);it[0]?.sheet?.render({force:true});}
 };
 export class PEActorSheet extends foundry.applications.api.HandlebarsApplicationMixin(foundry.applications.sheets.ActorSheetV2) {
  static DEFAULT_OPTIONS={classes:['pe-sheet','pe-actor-sheet'],position:{width:930,height:760},tag:'form',form:{submitOnChange:true,closeOnSubmit:false,handler:async function(event,form,formData){if(this.document.isOwner)await this.document.update(foundry.utils.expandObject(formData.object));}},actions:{
    ...itemActions,
+   async openDiary(){
+     const diary=game.journal.get(this.document.getFlag('polvora-e-eter','diaryId')) || game.journal.find(j=>j.getFlag('polvora-e-eter','diaryActorId')===this.document.id);
+     if(diary)return diary.sheet.render({force:true});
+     tell('Diário ainda não criado. O Mestre deve estar conectado para gerar o diário inicial.');
+   },
+   async choosePortrait(event,target){
+     if(!this.document.isOwner)return;
+     const Picker=foundry.applications.apps.FilePicker;
+     const picker=new Picker({type:'image',current:this.document.img,callback:async file=>{await this.document.update({img:file});this.render();}});
+     await picker.render({force:true});
+   },
    async selectTab(event,target){this._peTab=target.dataset.tab;this.render();},
    async rollSkill(event,target){const actor=this.document;if(actor.type==='esquadrao')return;const skill=target.dataset.skill;const row=target.closest('.pe-skill-row');const attribute=row?.querySelector('select[data-attribute]')?.value || Object.keys(GROUPS).find(k=>GROUPS[k].includes(skill))||'RAC';
      const attr=Number(actor.system.atributos?.[attribute]||0),grade=Number(actor.system.pericias?.[skill]||0);
@@ -102,15 +126,15 @@ export class PEActorSheet extends foundry.applications.api.HandlebarsApplication
  } };
  static PARTS={sheet:{template:'systems/polvora-e-eter/templates/actor.hbs',root:true}};
  async _prepareContext(options){const ctx=await super._prepareContext(options),a=this.document,s=a.system;
-   const inventory={};for(const kind of ['arma','armadura','equipamento','talento','ritual','especializacao','doutrina','ativo','veiculo'])inventory[kind]=itemsOf(a,kind);
+   const inventory={};for(const kind of ['arma','armadura','equipamento','consumivel','municao','magia','talento','ritual','especializacao','doutrina','ativo','veiculo'])inventory[kind]=itemsOf(a,kind);
    const skills=Object.entries(GROUPS).map(([code,names])=>({code,value:s.atributos?.[code]||1,skills:names.map(name=>({name,value:s.pericias?.[name]||0}))}));
    const attr=ATTRS.map(k=>({code:k,value:s.atributos?.[k]||0}));
    return {...ctx,actor:a,system:s,isSquad:a.type==='esquadrao',isThreat:a.type==='ameaca',isCharacter:a.type==='personagem',editable:a.isOwner,skills,attr,inventory,rd:s.rd||0,bpmState:bpmName(s.bpm?.value||60),tab:this._peTab||'principal',stocks:STOCKS.map(k=>({name:k,value:s.estoques?.[k]||0})),states:Object.entries(s.estados||{}).map(([name,value])=>({name,value})),fronts:Object.entries(s.frentes||{}).map(([name,value])=>({name,value}))};
  }
 }
 export class PEItemSheet extends foundry.applications.api.HandlebarsApplicationMixin(foundry.applications.sheets.ItemSheetV2){
- static DEFAULT_OPTIONS={classes:['pe-sheet','pe-item-sheet'],position:{width:660,height:600},tag:'form',form:{submitOnChange:true,closeOnSubmit:false,handler:async function(e,form,data){if(this.document.isOwner)await this.document.update(foundry.utils.expandObject(data.object));}},actions:{}};
+ static DEFAULT_OPTIONS={classes:['pe-sheet','pe-item-sheet'],position:{width:660,height:600},tag:'form',form:{submitOnChange:true,closeOnSubmit:false,handler:async function(e,form,data){if(this.document.isOwner)await this.document.update(foundry.utils.expandObject(data.object));}},actions:{async choosePortrait(){if(!this.document.isOwner)return;const Picker=foundry.applications.apps.FilePicker;const picker=new Picker({type:'image',current:this.document.img,callback:async path=>{await this.document.update({img:path});this.render();}});await picker.render({force:true});}}};
  static PARTS={sheet:{template:'systems/polvora-e-eter/templates/item.hbs',root:true}};
- async _prepareContext(options){const ctx=await super._prepareContext(options);return {...ctx,item:this.document,system:this.document.system,isWeapon:this.document.type==='arma',isArmor:this.document.type==='armadura',isTalent:this.document.type==='talento',isRitual:this.document.type==='ritual',isVehicle:this.document.type==='veiculo',editable:this.document.isOwner};}
+ async _prepareContext(options){const ctx=await super._prepareContext(options);return {...ctx,item:this.document,system:this.document.system,isWeapon:this.document.type==='arma',isArmor:this.document.type==='armadura',isTalent:this.document.type==='talento',isRitual:['ritual','magia'].includes(this.document.type),isVehicle:this.document.type==='veiculo',editable:this.document.isOwner};}
 }
 export {rollPool};

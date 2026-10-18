@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+let audioCount=0;
+const handlers={};
+globalThis.Hooks={on:(ev,fn)=>{handlers[ev]??=[];handlers[ev].push(fn);},once:(ev,fn)=>{handlers[ev]??=[];handlers[ev].push(fn);}};
+globalThis.AudioHelper={play:async()=>{audioCount++;}};
+const journals=[];
+const actor={id:'a1',name:'Corvo de Ferrum',type:'personagem',pack:null,ownership:{default:0,player1:3},flags:{},getFlag(ns,key){return this.flags[key];},async setFlag(ns,key,val){this.flags[key]=val;}};
+globalThis.game={user:{isGM:true},settings:{get:()=>true},actors:{get:id=>id===actor.id?actor:null,filter:fn=>[actor].filter(fn)},journal:{find:fn=>journals.find(fn),get:id=>journals.find(x=>x.id===id)},users:{get:()=>({character:actor})}};
+globalThis.foundry={utils:{deepClone:o=>structuredClone(o)}};
+globalThis.JournalEntry={create:async data=>{
+ const doc={...data,id:'journal1',flags:data.flags, getFlag(ns,key){return this.flags?.[ns]?.[key];},pages:{contents:[],size:1}, async createEmbeddedDocuments(tp,rows){const page=makePage(rows[0]);this.pages.contents.push(page);return [page];},async update(obj){Object.assign(this,obj);}};
+ function makePage(p){return {name:p.name,text:{...p.text},async update(values){this.text.content=values['text.content'];}};}
+ doc.pages.contents=data.pages.map(makePage);journals.push(doc);return doc;
+}};
+const {ensureCharacterDiary,logCharacterMessage}=await import('../module/journal.mjs');
+const {registerDiceHooks}=await import('../module/dice.mjs');
+registerDiceHooks();
+const diary=await ensureCharacterDiary(actor);
+assert.equal(diary.name,'Corvo de Ferrum - DIÁRIO');
+await ensureCharacterDiary(actor);assert.equal(journals.length,1);
+let publicMessage={id:'m1',speaker:{actor:'a1'},blind:false,whisper:[],rolls:[{dice:[{number:3,faces:6,results:[{result:1},{result:5},{result:6}]}]}],content:'Avançamos na frente <b>Ferrum</b>.',getFlag:()=>false,visible:true,author:{id:'player1'},timestamp:Date.now()};
+await logCharacterMessage(publicMessage);
+const page=diary.pages.contents.at(-1);
+assert.match(page.text.content,/TRANSMISSÃO/);
+assert.match(page.text.content,/1, 5, 6/);
+const before=page.text.content;
+await logCharacterMessage({...publicMessage,whisper:['gm']});
+assert.equal(page.text.content,before);
+await handlers.createChatMessage.at(-1)(publicMessage);
+assert.equal(audioCount,1);
+await handlers.createChatMessage.at(-1)({...publicMessage,rolls:[{dice:[{faces:6,results:[{result:5},{result:6}]}]}]});
+assert.equal(audioCount,1);
+console.log('Diário privado, arquivamento, rolagens e som de 1 no d6: OK');

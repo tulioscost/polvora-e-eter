@@ -1,0 +1,431 @@
+[
+  {
+    "name": "Escuta dos Ecos",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: vestígio acessível; minutos. Efeito: uma pista útil do passado, incompleta. Contramedida: fonte alterada fornece versões conflitantes; investigação cruzada.</p>",
+      "difficulty": 1,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Selo de Vigília",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: passagem pequena; 1 cena. Efeito: impede influência menor identificada. Contramedida: romper foco, alteração física, efeito superior avisado.</p>",
+      "difficulty": 1,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Véu de Fuligem",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: 1 setor; 1 cena. Efeito: oculta deslocamento, sem dano. Contramedida: vento, deslocamento, observação indireta.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Condutor Galvânico",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: aparelho próximo; 1 teste. Efeito: +1d6 na próxima Engenharia elegível. Contramedida: dispositivo existente e funcional.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Lanterna do Outro Lado",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: 1 setor; instante. Efeito: revela sinal de presença invisível. Contramedida: não torna alvo vulnerável sem contramedida.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Silêncio dos Cabos",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: circuito visto; 1 cena. Efeito: interrompe transmissão éterica específica. Contramedida: circuito redundante, reparo ou fonte externa.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Fenda na Armadura",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: 1 alvo; próximo golpe. Efeito: revela/aplica fraqueza: RD −2 no golpe apto. Contramedida: não acumula com PERF ou fraqueza já aplicada.</p>",
+      "difficulty": 3,
+      "cost": 2,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Tranca do Abismo",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: brecha menor; 1 cena. Efeito: reduz até 2 segmentos de relógio de manifestação <strong>local</strong>. Contramedida: exige foco e acesso; brechas colossais têm etapas.</p>",
+      "difficulty": 3,
+      "cost": 2,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Chamada do Nome",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: registro pessoal; instante. Efeito: verifica contradição entre duas identidades. Contramedida: não prova verdade sem fontes independentes.</p>",
+      "difficulty": 1,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Parede de Cinzas",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: passagem visível; 1 rodada. Efeito: cria cobertura parcial contra ataque comum. Contramedida: contornar, vento, romper suporte.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Desvio do Ponteiro",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: relógio <strong>não letal</strong>; 1 uso. Efeito: atrasa <strong>1 segmento</strong> de relógio por ação preparada. Contramedida: falha altera outro aspecto; não retrocede tempo.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Testemunho Guardado",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: prova material; 1 missão. Efeito: mantém cópia de um registro contra apagamento local. Contramedida: cópia deve ter portador e local de armazenamento.</p>",
+      "difficulty": 3,
+      "cost": 2,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Vigília de Cinzas",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Revela passagem recente por fuligem ritualizada.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Proteção",
+      "subcategory": "Guardas",
+      "difficulty": 1,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Oração dos Pinos",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Marca uma fechadura contra abertura não autorizada; não a tranca magicamente.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Proteção",
+      "subcategory": "Selagem",
+      "difficulty": 1,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Memória de Ferro",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Recupera sensação fragmentária associada ao metal tocado.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Objetos",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Lamento do Fio",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Escuta eco abafado de transmissão antiga em cabo partido.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Som",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Eco de Trincheira",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Revela uma pista acerca da última noite na posição.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Terreno",
+      "difficulty": 2,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Círculo do Último Nome",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Atrasa entidade vinculada a nome conhecido; exige limite narrativo.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Contenção",
+      "subcategory": "Espíritos",
+      "difficulty": 3,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Pacto de Vigia Noturno",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Solicita aviso a espírito local; exige negociação e preço.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Pactos",
+      "subcategory": "Proteção",
+      "difficulty": 2,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Sopro na Válvula",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Permite identificar falha de máquina de Éter; não conserta avaria.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Tecnologia",
+      "subcategory": "Máquinas",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Costura de Véus",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Fecha abertura menor temporariamente se sua âncora estiver neutralizada.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Contenção",
+      "subcategory": "Fendas",
+      "difficulty": 3,
+      "cost": 3
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Selo de Luto",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Protege restos mortais de perturbação ritualística comum.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Proteção",
+      "subcategory": "Santuários",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartografia do Silêncio",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Indica setor onde a ressonância é anômala.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Navegação",
+      "difficulty": 2,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Renúncia do Juramento",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Permite confrontar pacto antigo; exige sua cláusula verdadeira.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Pactos",
+      "subcategory": "Vínculos",
+      "difficulty": 3,
+      "cost": 3
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Âncora de Retirada",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Estabiliza uma passagem sobrenatural estreita durante extração.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Contenção",
+      "subcategory": "Rota",
+      "difficulty": 3,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cifra do Morto",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Interpreta padrão de mensagem espectral incompleta.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Investigação",
+      "subcategory": "Mensagens",
+      "difficulty": 2,
+      "cost": 1
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Sino sob a Água",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Comunica pedido a guardião ancestral; resposta não é automática.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Pactos",
+      "subcategory": "Limiar",
+      "difficulty": 3,
+      "cost": 2
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  }
+]

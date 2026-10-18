@@ -1,38 +1,134 @@
 {
   "id": "polvora-e-eter",
   "title": "Pólvora & Éter",
-  "description": "RPG militarpunk e warfantasy em Brumária. Motor 5–6 no d6, Ímpetos, trincheiras, Éter e esquadrões. Regras alfa 0.4.",
-  "version": "0.1.0",
-  "authors": [{"name":"tulioscost", "url":"https://github.com/tulioscost"}],
-  "compatibility": {"minimum":"14", "verified":"14"},
-  "esmodules": ["module/main.mjs"],
-  "styles": ["styles/polvora.css"],
+  "description": "Sistema alfa 0.4 para Foundry VTT 14; ficha militar, catálogos, cena, diário, rádio no chat e dados de Éter.",
+  "version": "0.2.0",
+  "authors": [
+    {
+      "name": "tulioscost",
+      "url": "https://github.com/tulioscost"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "esmodules": [
+    "module/main.mjs"
+  ],
+  "styles": [
+    "styles/polvora.css"
+  ],
   "socket": false,
-  "languages": [{"lang":"pt-BR","name":"Português (Brasil)","path":"lang/pt-BR.json"}],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
   "documentTypes": {
     "Actor": {
-      "personagem": {"htmlFields":["notes"]},
-      "ameaca": {"htmlFields":["description"]},
-      "esquadrao": {"htmlFields":["notes"]}
+      "personagem": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "ameaca": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "esquadrao": {
+        "htmlFields": [
+          "notes"
+        ]
+      }
     },
     "Item": {
-      "arma":{"htmlFields":["description"]},
-      "armadura":{"htmlFields":["description"]},
-      "equipamento":{"htmlFields":["description"]},
-      "talento":{"htmlFields":["description"]},
-      "ritual":{"htmlFields":["description"]},
-      "especializacao":{"htmlFields":["description"]},
-      "ativo":{"htmlFields":["description"]},
-      "doutrina":{"htmlFields":["description"]},
-      "veiculo":{"htmlFields":["description"]}
+      "arma": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "armadura": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "equipamento": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "talento": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "ritual": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "especializacao": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "ativo": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "doutrina": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "veiculo": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "consumivel": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "municao": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "magia": {
+        "htmlFields": [
+          "description"
+        ]
+      }
     }
   },
   "initiative": "1d6",
-  "grid": {"distance":1,"units":"setor"},
+  "grid": {
+    "distance": 1,
+    "units": "setor"
+  },
   "primaryTokenAttribute": "pv",
   "secondaryTokenAttribute": "bpm",
   "background": "systems/polvora-e-eter/assets/ui/cover.webp",
   "url": "https://github.com/tulioscost/polvora-e-eter",
   "manifest": "https://github.com/tulioscost/polvora-e-eter/releases/latest/download/system.json",
-  "download": "https://github.com/tulioscost/polvora-e-eter/releases/latest/download/polvora-e-eter.zip"
+  "download": "https://github.com/tulioscost/polvora-e-eter/releases/latest/download/polvora-e-eter.zip",
+  "relationships": {
+    "requires": [
+      {
+        "id": "dice-calculator",
+        "type": "module"
+      },
+      {
+        "id": "dice-so-nice",
+        "type": "module"
+      }
+    ]
+  }
 }

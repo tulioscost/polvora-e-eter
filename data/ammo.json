@@ -1,0 +1,478 @@
+[
+  {
+    "name": "Cartucho de revólver de serviço",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo armas curtas; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Armas curtas",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de pistola militar",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo armas curtas; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Armas curtas",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de pistola silenciada",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo armas curtas; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Armas curtas",
+      "subcategory": "Especial"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de pistola de sinalização",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo sinalização; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Sinalização",
+      "subcategory": "Sinal"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de fuzil padrão",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo fuzis; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Fuzis",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de fuzil pesado",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo fuzis; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Fuzis",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de fuzil de precisão",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo fuzis; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Fuzis",
+      "subcategory": "Precisão"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de fuzil de treino",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo fuzis; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Fuzis",
+      "subcategory": "Treino"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de carabina curta",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo carabinas; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Carabinas",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de carabina de selva",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo carabinas; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Carabinas",
+      "subcategory": "Especial"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de submetralhadora",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo submetralhadoras; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Submetralhadoras",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de submetralhadora perfurada",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo submetralhadoras; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Submetralhadoras",
+      "subcategory": "Especial"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de metralhadora leve",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo metralhadoras; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Metralhadoras",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de metralhadora média",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo metralhadoras; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Metralhadoras",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de metralhadora pesada",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo metralhadoras; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Metralhadoras",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho traçante",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo metralhadoras; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Metralhadoras",
+      "subcategory": "Sinalização"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de espingarda dispersão",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo espingardas; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Espingardas",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de espingarda único",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo espingardas; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Espingardas",
+      "subcategory": "Especial"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de espingarda de abertura",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo espingardas; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Espingardas",
+      "subcategory": "Engenharia"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Projétil de lança-granadas",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo lançadores; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Lançadores",
+      "subcategory": "Explosivo"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Projétil de fumaça",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo lançadores; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Lançadores",
+      "subcategory": "Fumaça"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Projétil de sinalização",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo lançadores; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Lançadores",
+      "subcategory": "Sinalização"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Carga de morteiro leve",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo artilharia; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Artilharia",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Carga de morteiro de fumaça",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo artilharia; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Artilharia",
+      "subcategory": "Fumaça"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Projétil de artilharia de campanha",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo artilharia; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Artilharia",
+      "subcategory": "Comum"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Carga antiblindagem de campanha",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo antiblindagem; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Antiblindagem",
+      "subcategory": "Especial"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Carga propelente de emergência",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo lançadores; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Lançadores",
+      "subcategory": "Experimental"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Cartucho de Éter contido",
+    "type": "municao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Munição ficcional do tipo experimental; requer arma compatível e requisição; sem bônus de dano automático.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Experimental",
+      "subcategory": "Ocultista"
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  }
+]

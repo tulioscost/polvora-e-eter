@@ -1,0 +1,968 @@
+[
+  {
+    "name": "Lanterna de aço",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>improvisada; também ilumina</p>",
+      "damage": 1,
+      "range": "próximo",
+      "bulk": 0,
+      "access": "C0",
+      "tags": "",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas brancas",
+      "subcategory": "Corpo a corpo"
+    }
+  },
+  {
+    "name": "Ferramenta de campanha",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>permite manutenção simples</p>",
+      "damage": 1,
+      "range": "próximo",
+      "bulk": 1,
+      "access": "C0",
+      "tags": "",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas brancas",
+      "subcategory": "Corpo a corpo"
+    }
+  },
+  {
+    "name": "Faca de serviço",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>CER; ocultável, combate curto</p>",
+      "damage": 2,
+      "range": "próximo",
+      "bulk": 0,
+      "access": "C0",
+      "tags": "CER",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas brancas",
+      "subcategory": "Corpo a corpo"
+    }
+  },
+  {
+    "name": "Baioneta padrão",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>CER; pode equipar fuzil</p>",
+      "damage": 2,
+      "range": "próximo",
+      "bulk": 0,
+      "access": "C1",
+      "tags": "CER",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas brancas",
+      "subcategory": "Corpo a corpo"
+    }
+  },
+  {
+    "name": "Sabre de oficial",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>CER; cerimonial e combate</p>",
+      "damage": 2,
+      "range": "próximo",
+      "bulk": 1,
+      "access": "C1",
+      "tags": "CER",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas brancas",
+      "subcategory": "Corpo a corpo"
+    }
+  },
+  {
+    "name": "Marreta do sapador",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>CER; acesso a obras e portas</p>",
+      "damage": 2,
+      "range": "próximo",
+      "bulk": 2,
+      "access": "C1",
+      "tags": "CER",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas brancas",
+      "subcategory": "Corpo a corpo"
+    }
+  },
+  {
+    "name": "Pistola de sinalização",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>iluminação/sinal; revela posição</p>",
+      "damage": 1,
+      "range": "curto",
+      "bulk": 1,
+      "access": "C0",
+      "tags": "",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Armas curtas"
+    }
+  },
+  {
+    "name": "Revólver de guarnição",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>munição comum; confiável</p>",
+      "damage": 2,
+      "range": "curto",
+      "bulk": 1,
+      "access": "C1",
+      "tags": "",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Armas curtas"
+    }
+  },
+  {
+    "name": "Pistola de serviço",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>arma lateral de referência</p>",
+      "damage": 2,
+      "range": "curto",
+      "bulk": 1,
+      "access": "C1",
+      "tags": "",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Armas curtas"
+    }
+  },
+  {
+    "name": "Pistola de oficiais do Consórcio",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>acesso corporativo limitado</p>",
+      "damage": 2,
+      "range": "curto",
+      "bulk": 1,
+      "access": "C2",
+      "tags": "",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Armas curtas"
+    }
+  },
+  {
+    "name": "Pistola éterica de aviso",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ETER; uma Carga por cena ativa</p>",
+      "damage": 2,
+      "range": "curto",
+      "bulk": 1,
+      "access": "C2",
+      "tags": "ETER",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Armas curtas"
+    }
+  },
+  {
+    "name": "Escopeta de trincheira",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>alcance restrito, revela posição</p>",
+      "damage": 3,
+      "range": "curto",
+      "bulk": 2,
+      "access": "C1",
+      "tags": "",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Equipamentos bélicos"
+    }
+  },
+  {
+    "name": "Fuzil de ferrolho",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>referência de infantaria</p>",
+      "damage": 3,
+      "range": "médio",
+      "bulk": 2,
+      "access": "C1",
+      "tags": "",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Fuzis e carabinas"
+    }
+  },
+  {
+    "name": "Fuzil de contramestre",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>adaptável a baioneta</p>",
+      "damage": 3,
+      "range": "médio",
+      "bulk": 2,
+      "access": "C1",
+      "tags": "",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Fuzis e carabinas"
+    }
+  },
+  {
+    "name": "Carabina compacta",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>facilita embarque, dano inferior</p>",
+      "damage": 2,
+      "range": "médio",
+      "bulk": 1,
+      "access": "C1",
+      "tags": "",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Fuzis e carabinas"
+    }
+  },
+  {
+    "name": "Carabina de batedor",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>PREC; apoio obrigatório</p>",
+      "damage": 3,
+      "range": "médio",
+      "bulk": 2,
+      "access": "C2",
+      "tags": "PREC",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Fuzis e carabinas"
+    }
+  },
+  {
+    "name": "Fuzil longo de atirador",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>PREC, REST; sem disparos especiais gratuitos</p>",
+      "damage": 3,
+      "range": "longo",
+      "bulk": 2,
+      "access": "C2",
+      "tags": "PREC, REST",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Fuzis e carabinas"
+    }
+  },
+  {
+    "name": "Fuzil automático de guarda",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>SUP; consumo em fogo sustentado</p>",
+      "damage": 3,
+      "range": "médio",
+      "bulk": 2,
+      "access": "C2",
+      "tags": "SUP",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Fuzis e carabinas"
+    }
+  },
+  {
+    "name": "Submetralhadora de corredor",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>SUP; alcance reduzido</p>",
+      "damage": 3,
+      "range": "curto",
+      "bulk": 2,
+      "access": "C2",
+      "tags": "SUP",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Metralhadoras"
+    }
+  },
+  {
+    "name": "Submetralhadora de escolta",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>SUP; dano menor</p>",
+      "damage": 2,
+      "range": "médio",
+      "bulk": 2,
+      "access": "C2",
+      "tags": "SUP",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Metralhadoras"
+    }
+  },
+  {
+    "name": "Carabina silenciosa ficcional",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>SIL; curta distância</p>",
+      "damage": 2,
+      "range": "curto",
+      "bulk": 1,
+      "access": "C2",
+      "tags": "SIL",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Fuzis e carabinas"
+    }
+  },
+  {
+    "name": "Fuzil éterico de bobina",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ETER; 1 Carga por cena de uso</p>",
+      "damage": 3,
+      "range": "médio",
+      "bulk": 2,
+      "access": "C3",
+      "tags": "ETER",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Fuzis e carabinas"
+    }
+  },
+  {
+    "name": "Mosquete de guarda ancestral",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ruído alto; manutenção lenta</p>",
+      "damage": 3,
+      "range": "médio",
+      "bulk": 2,
+      "access": "C1",
+      "tags": "",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Equipamentos bélicos"
+    }
+  },
+  {
+    "name": "Arco de fuligem",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>SIL; não penetra metal pesado</p>",
+      "damage": 2,
+      "range": "curto",
+      "bulk": 1,
+      "access": "C1",
+      "tags": "SIL",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Equipamentos bélicos"
+    }
+  },
+  {
+    "name": "Lança de estandarte",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>CER; arma e símbolo tático</p>",
+      "damage": 2,
+      "range": "próximo",
+      "bulk": 2,
+      "access": "C1",
+      "tags": "CER",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Lançadores"
+    }
+  },
+  {
+    "name": "Serrote de salvamento",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>CER; ferramenta, acesso condicionado</p>",
+      "damage": 2,
+      "range": "próximo",
+      "bulk": 2,
+      "access": "C1",
+      "tags": "CER",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas brancas",
+      "subcategory": "Corpo a corpo"
+    }
+  },
+  {
+    "name": "Projetor de neblina éterica",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ETER; oculta setor, não provoca dano cumulativo</p>",
+      "damage": 1,
+      "range": "curto",
+      "bulk": 2,
+      "access": "C2",
+      "tags": "ETER",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Equipamentos bélicos"
+    }
+  },
+  {
+    "name": "Lança de eletrodos fictício",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ETER; efeito de interrupção em equipamento acessível</p>",
+      "damage": 2,
+      "range": "curto",
+      "bulk": 2,
+      "access": "C2",
+      "tags": "ETER",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Lançadores"
+    }
+  },
+  {
+    "name": "Rifle perfurante de casamata",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>PERF, REST; munição rara</p>",
+      "damage": 3,
+      "range": "longo",
+      "bulk": 2,
+      "access": "C3",
+      "tags": "PERF, REST",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Equipamentos bélicos"
+    }
+  },
+  {
+    "name": "Bastão de lacre",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita rito de contenção identificado</p>",
+      "damage": 1,
+      "range": "próximo",
+      "bulk": 1,
+      "access": "C2",
+      "tags": "",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas brancas",
+      "subcategory": "Corpo a corpo"
+    }
+  },
+  {
+    "name": "Metralhadora leve",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>SUP, REST; 1 Munição no fogo de fixação</p>",
+      "damage": 3,
+      "range": "médio",
+      "bulk": 2,
+      "access": "C2",
+      "tags": "SUP, REST",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Metralhadoras"
+    }
+  },
+  {
+    "name": "Metralhadora pesada",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>SUP, REST; tripulação/posição; bloqueia passagem quando preparada</p>",
+      "damage": 3,
+      "range": "longo",
+      "bulk": 0,
+      "access": "C2",
+      "tags": "SUP, REST",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas de fogo",
+      "subcategory": "Metralhadoras"
+    }
+  },
+  {
+    "name": "Canhão leve de casamata",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>REST, ANT; consome munição especializada</p>",
+      "damage": 4,
+      "range": "longo",
+      "bulk": 0,
+      "access": "C3",
+      "tags": "REST, ANT",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Equipamentos bélicos"
+    }
+  },
+  {
+    "name": "Morteiro portátil",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ÁREA; relógio 4, aviso, coordenação</p>",
+      "damage": 4,
+      "range": "médio",
+      "bulk": 0,
+      "access": "C2",
+      "tags": "ÁREA",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Lançadores"
+    }
+  },
+  {
+    "name": "Morteiro de fortaleza",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ÁREA; relógio 4 e observação</p>",
+      "damage": 4,
+      "range": "longo",
+      "bulk": 0,
+      "access": "C3",
+      "tags": "ÁREA",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Lançadores"
+    }
+  },
+  {
+    "name": "Lançador de fumaça",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ÁREA sem dano; oculta rota por uma cena</p>",
+      "damage": 0,
+      "range": "médio",
+      "bulk": 2,
+      "access": "C2",
+      "tags": "ÁREA",
+      "ammo": {
+        "magazine": 6,
+        "capacity": 6,
+        "reserve": 2
+      },
+      "usesAmmo": true,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Lançadores"
+    }
+  },
+  {
+    "name": "Lançador de cápsulas étericas",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ETER, REST; exige Carga por ativação</p>",
+      "damage": 3,
+      "range": "médio",
+      "bulk": 0,
+      "access": "C3",
+      "tags": "ETER, REST",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Lançadores"
+    }
+  },
+  {
+    "name": "Projetor de luz anti-eco",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>revela vetor sobrenatural identificado por uma cena</p>",
+      "damage": 0,
+      "range": "médio",
+      "bulk": 0,
+      "access": "C3",
+      "tags": "",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Equipamentos bélicos"
+    }
+  },
+  {
+    "name": "Canhão de blindado médio",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ANT; ação da tripulação, não ataque pessoal múltiplo</p>",
+      "damage": 4,
+      "range": "longo",
+      "bulk": 0,
+      "access": "C3",
+      "tags": "ANT",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Equipamentos bélicos"
+    }
+  },
+  {
+    "name": "Artilharia de cerco",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ÁREA; somente ameaça por relógio, não tiro ordinário</p>",
+      "damage": 5,
+      "range": "longo",
+      "bulk": 0,
+      "access": "C3",
+      "tags": "ÁREA",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Equipamentos bélicos"
+    }
+  },
+  {
+    "name": "Dispositivo de ruptura ritual",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>exige rito D3, interrompe nó específico</p>",
+      "damage": 0,
+      "range": "próximo",
+      "bulk": 0,
+      "access": "C3",
+      "tags": "",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Armas brancas",
+      "subcategory": "Corpo a corpo"
+    }
+  },
+  {
+    "name": "Carro de canhões ferroviários",
+    "type": "arma",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>ÁREA, REST; depende de linha, equipe e combustível</p>",
+      "damage": 5,
+      "range": "longo",
+      "bulk": 0,
+      "access": "C3",
+      "tags": "ÁREA, REST",
+      "ammo": {
+        "magazine": 0,
+        "capacity": 0,
+        "reserve": 0
+      },
+      "usesAmmo": false,
+      "slot": "arma",
+      "equipped": false,
+      "category": "Apoio pesado",
+      "subcategory": "Equipamentos bélicos"
+    }
+  }
+]

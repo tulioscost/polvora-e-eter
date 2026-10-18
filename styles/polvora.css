@@ -9,3 +9,39 @@
 .pe-body{padding:15px 20px 22px;overflow-y:auto;flex:1}.pe-section{background:rgba(255,247,227,.28);padding:12px 14px 18px;border:1px solid rgba(90,60,40,.28)}.pe-section h2{font:700 21px Georgia,serif;border-bottom:2px solid #7c4639;padding-bottom:5px;margin:10px 0 12px}.pe-section h2 small{font:10px system-ui}.pe-section h3{font:bold 15px Georgia,serif;margin:12px 0 8px}.pe-fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.pe-sheet label{font:700 11px system-ui;display:flex;flex-direction:column;gap:4px}.pe-sheet input,.pe-sheet select,.pe-sheet textarea{background:#f5edda!important;color:#272827!important;border:1px solid #b49c78!important;border-radius:2px!important;min-width:0;font:12px system-ui;padding:5px;box-shadow:none!important}.pe-sheet textarea{width:100%;resize:vertical}.pe-attributes{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:6px;margin:13px 0}.pe-attributes label{background:#c6b190;text-align:center;padding:5px;align-items:center}.pe-attributes input{text-align:center;width:100%;max-width:57px;font-size:16px;font-weight:bold}.pe-resources{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}.pe-tools{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}.pe-footer{padding:7px 18px;border-top:2px solid #9c7b61;background:#272d2c;color:#bea88a;text-align:right;font:9px system-ui;letter-spacing:.5px}
 .pe-roll-settings{display:flex;gap:13px;align-items:end;margin-bottom:15px}.pe-skill-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.pe-skill-group{background:#e9dcc5;border:1px solid #bca787;padding:7px}.pe-skill-row{display:grid;grid-template-columns:minmax(0,1fr) 39px 59px;gap:3px;align-items:center;margin:4px 0}.pe-skill-row button{text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:4px 5px;font-size:10px}.pe-skill-row input{text-align:center;height:25px}.pe-skill-row select{height:25px;padding:2px;font-size:10px}
 .pe-entry{background:rgba(252,245,225,.55);border:1px solid #c8b297;display:flex;align-items:center;gap:8px;padding:7px;margin:5px 0;min-height:43px}.pe-entry img{height:32px;width:32px;object-fit:cover}.pe-entry>div:first-of-type{flex:1;min-width:80px}.pe-entry b{font:700 13px Georgia,serif}.pe-entry small{display:block;color:#594d3e;font:11px system-ui}.pe-entry-actions{display:flex;gap:3px;flex-wrap:wrap;margin-left:auto}.pe-entry button{font-size:10px;padding:3px 6px}.pe-stocks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:12px 0}.pe-stock{display:flex;justify-content:space-between;align-items:center;background:#e5d7c0;border:1px solid #baa384;padding:6px}.pe-stock span{display:flex;align-items:center;gap:9px}.pe-stock strong{min-width:20px;text-align:center}.pe-banner{background:#e6ceac;border-left:4px solid #8c2d22;padding:8px;font:12px Georgia,serif}.pe-description{padding:9px;background:#f0e4ca;border-left:3px solid #8f4e39;max-height:190px;overflow:auto}.pe-muted{font:10px system-ui;color:#6b5a47}.pe-chat{font:12px system-ui}.pe-chat strong{font-size:14px}.pe-chat small{display:block;opacity:.75}
+/* v0.2.0 — classified military dossier, scoped to PE sheets. */
+.pe-sheet{--pe-olive:#2d3530;--pe-gold:#bda178;--pe-rule:#977858;--pe-paper:#e6d9bd;font-family:'Georgia',serif}
+.pe-sheet .window-header{background:#1e2726;color:#dbc9a9;border-bottom:2px solid #ad8c61;min-height:40px}
+.pe-sheet .window-title{font-family:Georgia,serif;font-weight:700;letter-spacing:.6px}
+.pe-sheet .window-content{padding:0!important;background:#e5d6b8!important;overflow:hidden!important}
+.pe-dossier{background-color:#e5d8ba;background-image:repeating-linear-gradient(180deg,transparent 0,transparent 28px,rgba(53,53,39,.045) 29px,transparent 30px),linear-gradient(95deg,rgba(90,64,36,.12),transparent 8%,transparent 90%,rgba(90,64,36,.13));border:5px double #514b3d;box-shadow:inset 0 0 0 2px #b99e75}
+.pe-classification{display:flex;align-items:center;justify-content:space-between;gap:8px;background:#302e29;color:#ded2b7;padding:8px 15px;font:700 9px/1.3 system-ui;letter-spacing:1px;border-bottom:2px solid #b3956b}
+.pe-header{background:linear-gradient(115deg,#202927,#455047 48%,#352d28);border-bottom:5px double #c6a87e;min-height:172px}
+.pe-eyebrow{color:#d7c296;font-size:11px}
+.pe-name{font:700 27px Georgia,serif!important}
+.pe-portrait-frame{display:flex;flex-direction:column;align-items:stretch;gap:3px;flex:0 0 104px}
+.pe-portrait{width:104px;height:111px;background:#403a30;object-fit:cover;border:3px double #cdb792;filter:sepia(.15);cursor:pointer}
+.pe-photo-button{height:23px!important;min-height:22px!important;background:#9f835c!important;color:#171916!important;font:700 10px system-ui!important;padding:2px!important}
+.pe-tabs{background:#282f2e;border-bottom:2px solid #ad885a;padding:8px;gap:4px}
+.pe-tabs button{background:#454d48!important;border:1px solid #8d866f!important;box-shadow:inset 0 -2px 0 rgba(0,0,0,.3);color:#eee0c5!important;border-radius:0!important}
+.pe-tabs button.active{background:#d5b98d!important;color:#2b2925!important;border:1px solid #f2dfbd!important}
+.pe-paper-meta{display:flex;justify-content:space-between;gap:10px;font:700 9px system-ui;color:#75573d;letter-spacing:1.1px;padding:0 2px 9px;border-bottom:2px solid #8c654b;margin-bottom:13px}
+.pe-section{background:rgba(255,250,230,.4);border:1px solid #9f8c70;box-shadow:inset 0 0 0 3px rgba(177,153,112,.13);padding:16px}
+.pe-section h2{font:700 22px Georgia,serif;color:#342e29;letter-spacing:.2px;text-transform:uppercase;border-bottom:3px double #734c39}
+.pe-section h3{font:700 13px system-ui;letter-spacing:.6px;color:#654632;text-transform:uppercase;border-bottom:1px solid #b49a76;padding-bottom:5px}
+.pe-entry{background:#efe3cc;border-left:3px solid #71503b}
+.pe-entry:nth-of-type(even){background:#e3d3b7}
+.pe-attributes label{border-top:2px solid #775840;background:#cabb9d}
+.pe-footer{background:#27302c;color:#ddc39b;border-top:3px double #9f8664;letter-spacing:1px}
+.pe-vitals>div{border:2px solid #bba073;background:#e4d4b8}
+.pe-root .pe-tools button{letter-spacing:.3px}
+/* Military radio intercept chat flavor and freeform logistics messages. */
+.pe-transmission{border:2px solid #8b795c;background:#242d2b;color:#f1e4cc;padding:10px 12px;box-shadow:inset 0 0 0 2px #48514a;font:12px/1.5 'Courier New',monospace;letter-spacing:.1px}
+.pe-transmission strong,.pe-transmission b{color:#f5ddb0}
+.pe-transmission .pe-radio-label{color:#c7b18f;border-bottom:1px dashed #8d947f;padding-bottom:6px;margin-bottom:6px;font:bold 9px/1.4 system-ui;letter-spacing:1px}
+.pe-transmission .pe-pass{color:#afe1ba}
+.pe-transmission .pe-fail{color:#ff9a84}
+.pe-transmission small{display:block;border-top:1px dashed #817e68;margin-top:6px;padding-top:6px;color:#bdb2a0;font:10px system-ui}
+.chat-message .pe-transmission,.chat-message .pe-transmission *{font-family:'Courier New',monospace}
+.pe-diary-log{border-left:3px solid #927351;padding:7px 10px;margin:7px 0;background:#ece3d3}
+@media (max-width:750px){.pe-header{flex-wrap:wrap}.pe-vitals{width:100%}.pe-classification{font-size:7px}.pe-paper-meta{display:block}.pe-attributes{grid-template-columns:repeat(3,1fr)}.pe-skill-groups{grid-template-columns:repeat(2,1fr)}}

@@ -7,7 +7,7 @@ globalThis.foundry={applications:{api:{HandlebarsApplicationMixin:klass=>klass},
 globalThis.Handlebars={registerHelper:()=>{}};
 globalThis.CONFIG={Actor:{},Item:{}};
 globalThis.game={settings:{register:()=>{},get:()=>false},system:{}};
-globalThis.Hooks={once:(_,fn)=>{if(_==='init')fn();}};
+globalThis.Hooks={once:(_,fn)=>{if(_==='init')fn();},on:()=>{}};
 const {PEActorSheet,PEItemSheet}=await import('../module/sheets.mjs');
 const {PEActor}=await import('../module/documents.mjs');
 assert.equal(PEActorSheet.PARTS.sheet.root,true);
@@ -22,4 +22,7 @@ assert.equal(typeof game.system.pe.seedWorld,'function');
 const char=new PEActor('personagem',{atributos:{ROB:3},pv:{value:15,max:0},rd:0,baseRD:0},[{type:'armadura',system:{equipped:true,rd:2,durability:40}}]);
 char.prepareDerivedData();assert.equal(char.system.pv.max,15);assert.equal(char.system.rd,1);
 const npc=new PEActor('ameaca',{atributos:{ROB:2},pv:{value:10,max:0},rd:1,baseRD:1},[]);npc.prepareDerivedData();assert.equal(npc.system.rd,1);
-console.log('13 contratos básicos da API e cálculos derivados passaram.');
+assert.ok(PEActorSheet.DEFAULT_OPTIONS.actions.choosePortrait);
+assert.ok(PEActorSheet.DEFAULT_OPTIONS.actions.openDiary);
+assert.ok(PEItemSheet.DEFAULT_OPTIONS.actions.choosePortrait);
+console.log('16 contratos de API, retrato e diário passaram.');

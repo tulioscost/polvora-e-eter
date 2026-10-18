@@ -26,3 +26,22 @@ for f in ['actor.hbs','item.hbs']:
  assert not stack,(f,stack)
 assert (ROOT/'.github/workflows/release.yml').exists()
 print('Estrutura, tipos, dados, recursos e templates: OK')
+
+# v0.2.0 requires both modules, a playable intro image, sound and >=25 catalog entries.
+assert j['version']=='0.2.0'
+assert {r['id'] for r in j['relationships']['requires']}=={'dice-calculator','dice-so-nice'}
+for f in ['weapons-expanded','gear','consumables','armors','ammo','spells','rituals-expanded']:
+ rows=json.loads((ROOT/f'data/{f}.json').read_text())
+ assert len(rows)>=25,(f,len(rows))
+ assert len({r['name'] for r in rows})==len(rows),f
+ for row in rows:
+  assert row['type'] in t['Item'],(f,row['type'])
+  assert row['system'].get('description'),(f,row['name'])
+assert (ROOT/'assets/ui/convocacao.webp').is_file()
+assert (ROOT/'assets/audio/tiro-falha.mp3').is_file()
+for js in ['content.mjs','journal.mjs','dice.mjs']:
+ assert (ROOT/'module'/js).is_file()
+for key in ('choosePortrait','openDiary','consumivel','magia'):
+ assert key in (ROOT/'module/sheets.mjs').read_text(),key
+assert 'data-action="choosePortrait"' in (ROOT/'templates/actor.hbs').read_text()
+print('Catálogos ampliados, cena, som, diário e dependências: OK')

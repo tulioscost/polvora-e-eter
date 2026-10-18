@@ -1,0 +1,618 @@
+[
+  {
+    "name": "Colete de campanha",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>RD1. Durabilidade 100</p>",
+      "rd": 1,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Peitoral de placas",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>RD2. Durabilidade 100</p>",
+      "rd": 2,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Arnês de assalto",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>RD3. Durabilidade 100; deslocamento exigente pode prejudicar por carga</p>",
+      "rd": 3,
+      "durability": 100,
+      "access": "C3",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Armadura éterica especializada",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>RD4. rara; requer manutenção e vedação, não cumulativa</p>",
+      "rd": 4,
+      "durability": 100,
+      "access": "C3",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Casaco acolchoado",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Leve",
+      "subcategory": "Tecido",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Colete de campanha reforçado",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Leve",
+      "subcategory": "Tecido",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Casaco de trincheira encerado",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Leve",
+      "subcategory": "Tecido",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Capa antichuva militar",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Leve",
+      "subcategory": "Ambiente",
+      "rd": 0,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Manto do batedor",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Leve",
+      "subcategory": "Camuflagem",
+      "rd": 0,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Colete de couro rebitado",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Média",
+      "subcategory": "Couro",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Placas de ombro rebitadas",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Média",
+      "subcategory": "Aço",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Peitoral de aço leve",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Média",
+      "subcategory": "Aço",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Proteção de sapador",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Média",
+      "subcategory": "Aço",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Colete de atirador",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Média",
+      "subcategory": "Aço",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Casaco blindado de oficial",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Média",
+      "subcategory": "Aço",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Peitoral de ferro naval",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Pesada",
+      "subcategory": "Aço",
+      "rd": 2,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Armadura de assalto de trincheira",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Pesada",
+      "subcategory": "Aço",
+      "rd": 2,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Armadura pesada de sapador",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Pesada",
+      "subcategory": "Aço",
+      "rd": 2,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Couraça de sentinela",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Pesada",
+      "subcategory": "Aço",
+      "rd": 2,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Couraça de operário do Éter",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Especial",
+      "subcategory": "Contenção",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Colete antirressonância",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Especial",
+      "subcategory": "Contenção",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Manto isolante ritualístico",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Especial",
+      "subcategory": "Contenção",
+      "rd": 0,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Máscara com cota de malha",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Especial",
+      "subcategory": "Respiração",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Escudo de ombro dobrável",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Especial",
+      "subcategory": "Aço",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Colete de piloto",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Veículos",
+      "subcategory": "Tripulação",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Colete de tanqueiro",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Veículos",
+      "subcategory": "Tripulação",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Colete de observador",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Veículos",
+      "subcategory": "Tripulação",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Proteção de maquinista",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Veículos",
+      "subcategory": "Tripulação",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Armadura de reparador",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Engenharia",
+      "subcategory": "Aço",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Peitoral cerimonial dos Portões",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Especial",
+      "subcategory": "Contenção",
+      "rd": 1,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Couraça de ferro negro",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Pesada",
+      "subcategory": "Aço",
+      "rd": 2,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  },
+  {
+    "name": "Proteção de cerco articulada",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p><strong>PROTOCOLO EXPERIMENTAL:</strong> Item opcional para playtest. Proteção ficcional: não acumula RD com outras armaduras. Vulnerabilidades ficam a critério das regras do manual.</p><p>O Narrador confirma disponibilidade, preço, carga e consequências. Não concede modificadores fora das regras publicadas no livro-base.</p>",
+      "quantity": 1,
+      "category": "Pesada",
+      "subcategory": "Aço",
+      "rd": 2,
+      "durability": 100,
+      "equipped": false
+    },
+    "flags": {
+      "polvora-e-eter": {
+        "edition": "0.2.0",
+        "source": "expansão experimental; não consta no livro-base alfa 0.4"
+      }
+    }
+  }
+]

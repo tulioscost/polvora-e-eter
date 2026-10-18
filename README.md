@@ -1,66 +1,76 @@
-# Pólvora & Éter — Foundry VTT v14
+# PÓLVORA & ÉTER — Sistema para Foundry VTT v0.2.0
 
-Sistema jogável de **Warfantasy / Militarpunk** para **Foundry VTT 14.369**, derivado do livro-base **Pólvora & Éter — Alfa 0.4**. Código versão `0.1.0`.
+**Livro-base:** Pólvora & Éter Alfa 0.4. **Foundry:** versão 14, alvo 14.369. **Estado:** atualização alfa com validação estática e testes de contrato, ainda não testada em um Foundry aberto.
 
-## Publicação via GitHub — tulioscost
+## Instalação
 
-**Repositório pretendido**: `https://github.com/tulioscost/polvora-e-eter`
+### GitHub Releases
 
-1. Crie no GitHub um repositório **público** chamado `polvora-e-eter` em `tulioscost` (a publicação não ocorreu automaticamente).
-2. Envie **todos os arquivos desta pasta para a raiz do repositório** (incluindo `.github/workflows/release.yml`). Pode usar GitHub Desktop ou fazer upload dos arquivos descompactados.
-3. Em **Actions**, autorize o workflow `Publicar sistema Foundry` se necessário e execute `Run workflow` na branch `main`. Certifique-se de que **Settings → Actions → General → Workflow permissions** esteja em **Read and write permissions**.
-4. Aguarde a criação do Release `v0.1.0`, com dois anexos: `system.json` e `polvora-e-eter.zip`.
-5. **Foundry → Instalar sistema → URL de manifesto:**
+Após publicar a Release `v0.2.0` no repositório `tulioscost/polvora-e-eter`, informe no Foundry → Instalar Sistema → URL de manifesto:
 
-   `https://github.com/tulioscost/polvora-e-eter/releases/latest/download/system.json`
+`https://github.com/tulioscost/polvora-e-eter/releases/latest/download/system.json`
 
-   Este URL só funcionará **após** criar repositório e concluir o workflow; não é um link publicado no momento da geração local.
+O `system.json` publicado deve vir do **mesmo build** que o arquivo `polvora-e-eter.zip`. O manifesto da versão 0.2.0 referencia esse arquivo de Release.
 
-## Instalação manual imediata (sem GitHub)
+### Instalação manual
 
-Extraia o ZIP nesta pasta do servidor:
+Extraia o **conteúdo** de `polvora-e-eter.zip` na pasta `Data/systems/polvora-e-eter/`. `system.json` deve ficar na raiz dessa pasta. Reinicie o Foundry e selecione o sistema no mundo.
 
-`{Diretório de dados do Foundry}/Data/systems/polvora-e-eter/`
+**Dependências obrigatórias, declaradas no manifesto:**
 
-O arquivo `system.json` deve ficar **diretamente** em `.../polvora-e-eter/system.json`. Reinicie o Foundry; crie um mundo e selecione o sistema **Pólvora & Éter**.
+- [Dice Tray / Dice Calculator](https://foundryvtt.com/packages/dice-calculator)
+- [Dice So Nice!](https://foundryvtt.com/packages/dice-so-nice/)
 
-## Funcionalidades
+Ative os dois módulos no mundo. Para visualizar as seis faces originais, selecione o conjunto **Pólvora & Éter** na configuração de Dados do Dice So Nice. Sem o módulo, a instalação não satisfaz os requisitos da versão.
 
-- Fichas **Personagem**, **Ameaça** e **Esquadrão** — DocumentSheetV2 + Handlebars com visual de papel militar.
-- 9 atributos, 45 perícias, reserva 0–10d6; 5–6 = sucesso; cada 6 gera Ímpeto se houver êxito; D1–D5.
-- PV derivados de ROB × 5, redução efetiva de RD por durabilidade, BPM, trauma e PF 0–2.
-- Ataques com dano fixo, tiro limitado por carregador **opcional de interface**, supressão com custo obrigatório de 1 Munição (PF2 sem dano), reagrupar, rituais com Éter.
-- Unidade persistente: estoques, Estados, Prestígio, frentes, reparos e operações.
-- Conteúdo **automático no primeiro acesso do GM**: nove compêndios de **mundo** (42 armas, 25 equipamentos, 72 talentos, 16 especializações, 12 rituais, 12 ameaças, 4 personagens prontos, 8 ativos, 6 doutrinas) e 1 livro-base em Journal com 12 capítulos.
-- Conjunto Dice So Nice com seis imagens originais. **Dice So Nice é opcional**: o motor continua funcionando com as rolagens nativas do Foundry.
+## Atualização de v0.1.0 para v0.2.0
 
-## Iniciar jogo
+A atualização mantém o identificador `polvora-e-eter` e preserva os documentos existentes do mundo. No primeiro acesso de um **GM**, cria os novos compêndios, adiciona registros ausentes e organiza registros ainda sem pasta. **Não sobrescreve registros já existentes ou sua categorização manual.** As versões do livro-base continuam indicadas pela edição Alfa 0.4.
 
-1. Entre no mundo como GM e aguarde a mensagem de criação dos compêndios.
-2. Na pasta de Compêndios, encontre os nove pacotes `PE — ...`.
-3. Importe os itens desejados para o mundo e arraste-os à ficha de personagem. Para usar uma arma, ela precisa pertencer ao personagem como item incorporado.
-4. Crie um Actor `personagem`, escolha Caminho e Trilha, distribua 6 pontos adicionais de atributo (os 9 começam em 1) e 8 pontos de perícias, conforme o livro. **O sistema não aplica automaticamente os pontos de criação**; acompanhe a distribuição em mesa.
-5. Crie Actor `esquadrao` para administrar a companhia e os recursos. A separação entre munição do carregador e **Munição de manobra coletiva** é intencional e descrita abaixo.
-6. O GM pode reexecutar `await game.system.pe.seedWorld()` pelo console ou por uma Macro Script, sem apagar personalizações de compêndios que já contenham registros.
+Se necessário, execute em macro Script como GM:
 
-## Limitações e decisões explícitas
+```js
+await game.system.pe.seedWorld();
+await game.system.pe.seedIntroScene();
+```
 
-- **Não foi executado em uma instância real do Foundry VTT 14.369.** Arquivos e testes estáticos foram verificados. Possíveis diferenças de API requerem teste de integração no Foundry.
-- O campo carregador/reserva serve à **conveniência visual do VTT** e não substitui o custo abstrato de Munição definido pelo manual. O tiro comum não debita a reserva coletiva; fogo de fixação debita 1 Munição do ator. O GM distribui as cargas a partir do esquadrão, com escrituração 1:1, no briefing.
-- Talentos e rituais respeitam a descrição de frequência, acesso e consequência; o sistema oferece ativação/consumo e execução de teste, mas **não automatiza integralmente cada efeito narrativo** dos 72 talentos, nem relógios ficcionais complexos.
-- Não há execução automática de dano ao alvo sem confirmação do GM; resultado de ataque e dano potencial vão ao chat, permitindo aplicar manualmente conforme RD e Ímpetos escolhidos.
-- Compêndios são criados no **mundo**, não em packs LevelDB distribuídos previamente. A geração usa os dados JSON distribuídos com o sistema e preserva itens preexistentes.
-- O livro-base do Diário é texto HTML, não a edição PDF ilustrada. As páginas de regras originais estão incluídas integralmente na pasta `data/book.json`.
-- A unidade estratégica não avança todas as frentes por simples passagem de tempo. O avanço permanece decisão causal do Narrador.
+## Funcionalidades v0.2.0
 
-## Testes locais
+- **Ficha militar personalizada** para Personagem, Ameaça e Esquadrão, com cabeçalho classificado, fotografia substituível (clique no retrato ou em **ALTERAR FOTO**), abas operacionais e inventário por tipo.
+- **13 compêndios de mundo**, catalogados em **pastas e subpastas** de categoria e subtipo: 42 armas, 51 equipamentos, 32 consumíveis, 32 armaduras, 28 munições, 26 magias, 27 rituais, 72 talentos, 16 Trilhas, 12 ameaças, 4 personagens prontos, 8 ativos e 6 Doutrinas.
+- **Magias/rituais** com dificuldade, custo de Éter e execução da reserva em dados; os 12 rituais originais permanecem no catálogo expandido.
+- **Cena automática** `PÓLVORA & ÉTER — VOCÊ FOI CONVOCADO!`, usando a ilustração original. É ativada automaticamente **somente quando o mundo ainda não tem cena ativa**; uma cena já em uso não é substituída.
+- **Journal de personagem** chamado `<nome> - DIÁRIO`, criado automaticamente ao registrar personagem (ou ao conectar o GM depois da atualização). Registra rolagens e mensagens públicas com associação à ficha. **Não copia whispers ou mensagens cegas** para diários compartilhados.
+- **Chat de rádio militar** para rolagens do sistema, informando dados, D, sucessos, Ímpetos, dano potencial e observações táticas.
+- **Seis faces de d6**: o 1 é um tiro na fuselagem; 2–5 são faces militares; 6 contém seis cristais de Éter. O conjunto só é registrado através da API do módulo **Dice So Nice**.
+- **Som ao aparecer o resultado 1 em qualquer d6 da rolagem pública**: `assets/audio/tiro-falha.mp3`, adaptado do arquivo fornecido, executado uma vez por mensagem de rolagem.
 
-`node tests/rules.test.mjs`
+## Regras preservadas
 
-## Fontes técnicas
+Reserva de até 10d6; valores 5–6 são sucessos, resultados 6 geram Ímpetos em testes bem-sucedidos; PV = ROB × 5; RD não cumulativa; BPM, PF, munição, suprimentos e progressão estratégica derivam do livro-base Alfa 0.4. Lançamento de ataques, supressão, reagrupar e gasto de Éter permanecem na ficha.
 
-- [Foundry — System Development](https://foundryvtt.com/article/system-development/)
-- [Foundry v14 — Document Sheets](https://foundryvtt.com/api/v14/modules/foundry.applications.sheets.html)
-- [Dice So Nice — Dice Systems](https://riccisi.gitlab.io/foundryvtt-dice-so-nice/api/dice-systems/)
+### Transparência editorial
 
-Arte e cosmologia próprias do projeto. O sistema de resolução é adaptado do documento particular **CLANDESTINO 5.2.2** fornecido no desenvolvimento; não inclui texto integral dessa obra, apenas a adaptação já autorizada pelo material do projeto.
+Magias, rituais, munições, armaduras e consumíveis que não constavam do catálogo original estão **marcados como expansão experimental**. Não introduzem bônus automáticos que alterem as probabilidades da versão Alfa 0.4. Dano no alvo, cenas condicionais, rituais complexos e efeitos particulares de talentos ainda requerem decisões do mestre.
+
+## Notas de segurança e privacidade
+
+- O diário copia somente mensagens públicas associadas ao personagem. O GM precisa estar conectado para o arquivamento automático; mensagens enviadas enquanto o GM está offline não são reprocessadas automaticamente.
+- A cópia do diário herda a visibilidade da ficha na criação. Se conceder permissão de leitura a um novo usuário após a criação, confira manualmente as permissões do diário.
+- O som de tiro será audível para quem puder visualizar a mensagem de rolagem, conforme configurações locais do navegador.
+
+## Verificações do pacote
+
+```bash
+python3 tools/verify.py
+node tests/rules.test.mjs
+node tests/api-contract.test.mjs
+node tests/content.test.mjs
+node tests/diary-audio.test.mjs
+```
+
+Os testes checam dados, sintaxe, cálculos e simulações de API. **Não substituem testes com uma instância efetiva do Foundry VTT 14.369**.
+
+## Publicação
+
+Use `.github/workflows/release.yml` para criar a Release `v0.2.0`. Ele empacota ZIP instalável, manifesto e checksums. O repositório remoto pode ter sido criado, mas o pacote aqui fornecido **não está publicado automaticamente**.
