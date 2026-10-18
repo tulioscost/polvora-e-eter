@@ -99,7 +99,7 @@ export async function seedWorld(){
   const pages=(await loadJSON('book.json')).map((page,i)=>({name:page.name,type:'text',sort:i*100000,text:{content:page.html,format:1}}));
   await JournalEntry.create({name:'PÓLVORA & ÉTER — Livro-base Alfa 0.4',img:`systems/${ID}/assets/ui/cover.webp`,pages,flags:{[ID]:{baseBook:true}}});
  }
- await game.settings.set(ID,'seedVersion','0.2.0');
+ await game.settings.set(ID,'seedVersion','0.2.1');
  ui.notifications.info(`Pólvora & Éter: 13 compêndios conferidos; ${additions} registros adicionados sem sobrescrever os existentes.`);
  return additions;
 }

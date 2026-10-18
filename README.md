@@ -1,3 +1,5 @@
+**Correção 0.2.1:** consulte [DIAGNOSTICO_FICHA.md](DIAGNOSTICO_FICHA.md).
+
 # PÓLVORA & ÉTER — Sistema para Foundry VTT v0.2.0
 
 **Livro-base:** Pólvora & Éter Alfa 0.4. **Foundry:** versão 14, alvo 14.369. **Estado:** atualização alfa com validação estática e testes de contrato, ainda não testada em um Foundry aberto.

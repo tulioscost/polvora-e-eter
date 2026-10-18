@@ -45,3 +45,11 @@
 .chat-message .pe-transmission,.chat-message .pe-transmission *{font-family:'Courier New',monospace}
 .pe-diary-log{border-left:3px solid #927351;padding:7px 10px;margin:7px 0;background:#ece3d3}
 @media (max-width:750px){.pe-header{flex-wrap:wrap}.pe-vitals{width:100%}.pe-classification{font-size:7px}.pe-paper-meta{display:block}.pe-attributes{grid-template-columns:repeat(3,1fr)}.pe-skill-groups{grid-template-columns:repeat(2,1fr)}}
+
+/* PATCH 0.2.1 — V14: a janela usa classes na aplicação, não na ficha genérica. */
+.application.pe-actor-sheet .window-header,.application.pe-item-sheet .window-header{background:#192524!important;color:#ead8b6!important;border-bottom:3px double #b59a6c!important}
+.application.pe-actor-sheet .window-content,.application.pe-item-sheet .window-content{padding:0!important;background:#d5c2a0!important;overflow:hidden}
+.application.pe-actor-sheet{min-width:640px}
+.application.pe-actor-sheet .pe-root{height:100%;min-height:540px;overflow:hidden}
+.application.pe-actor-sheet .pe-portrait-frame .pe-photo-button{background:#c6ad7e!important;color:#1a2625!important}
+.application.pe-actor-sheet .pe-name{color:#fff3df!important}

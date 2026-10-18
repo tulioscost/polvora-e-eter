@@ -1,0 +1,33 @@
+{
+  "PE": {
+    "Title": "Pólvora & Éter",
+    "HP": "PV",
+    "BPM": "BPM",
+    "Supression": "Pressão de Fogo",
+    "Ether": "Éter",
+    "Character": "Personagem",
+    "Squad": "Esquadrão",
+    "Threat": "Ameaça"
+  },
+  "TYPES": {
+    "Actor": {
+      "personagem": "Personagem · Dossiê Militar",
+      "ameaca": "Ameaça · Relatório de Inteligência",
+      "esquadrao": "Esquadrão · Relatório Operacional"
+    },
+    "Item": {
+      "arma": "Arma",
+      "armadura": "Armadura",
+      "equipamento": "Equipamento",
+      "consumivel": "Consumível",
+      "municao": "Munição",
+      "magia": "Magia de Éter",
+      "ritual": "Ritual",
+      "talento": "Talento",
+      "especializacao": "Trilha",
+      "ativo": "Ativo",
+      "doutrina": "Doutrina",
+      "veiculo": "Veículo"
+    }
+  }
+}

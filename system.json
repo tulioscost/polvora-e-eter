@@ -1,8 +1,8 @@
 {
   "id": "polvora-e-eter",
   "title": "Pólvora & Éter",
-  "description": "Sistema alfa 0.4 para Foundry VTT 14; ficha militar, catálogos, cena, diário, rádio no chat e dados de Éter.",
-  "version": "0.2.0",
+  "description": "Pólvora & Éter 0.2.1: correção da ficha militar no Foundry 14, modelos tipados, compêndios e diário.",
+  "version": "0.2.1",
   "authors": [
     {
       "name": "tulioscost",
@@ -11,7 +11,8 @@
   ],
   "compatibility": {
     "minimum": "14",
-    "verified": "14"
+    "verified": "14",
+    "maximum": "14"
   },
   "esmodules": [
     "module/main.mjs"
@@ -25,6 +26,11 @@
       "lang": "pt-BR",
       "name": "Português (Brasil)",
       "path": "lang/pt-BR.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
     }
   ],
   "documentTypes": {
@@ -130,5 +136,6 @@
         "type": "module"
       }
     ]
-  }
+  },
+  "type": "system"
 }

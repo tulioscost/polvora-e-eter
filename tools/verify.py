@@ -1,13 +1,13 @@
 from pathlib import Path
 import json,re,zipfile
 ROOT=Path(__file__).resolve().parents[1]
-req=['system.json','template.json','module/main.mjs','module/sheets.mjs','module/documents.mjs','module/rules.mjs','templates/actor.hbs','templates/item.hbs','styles/polvora.css']
+req=['system.json','module/data-models.mjs','module/main.mjs','module/sheets.mjs','module/documents.mjs','module/rules.mjs','templates/actor.hbs','templates/item.hbs','styles/polvora.css']
 for p in req:
  assert (ROOT/p).is_file(),p
 j=json.loads((ROOT/'system.json').read_text());assert j['id']=='polvora-e-eter';assert j['compatibility']['minimum']=='14'
-t=json.loads((ROOT/'template.json').read_text())
-assert len(t['Actor']['templates']['core']['pericias'])==45
-assert len(t['Actor']['templates']['core']['atributos'])==9
+t=json.loads((ROOT/'system.json').read_text())['documentTypes']
+assert 'template.json' not in [p.name for p in ROOT.iterdir()]
+assert 'personagem' in t['Actor'] and 'arma' in t['Item']
 for f,n in [('weapons',42),('equipment',25),('talents',72),('rituals',12),('paths',16),('enemies',12),('assets',8),('doctrines',6),('book',12),('pregens',4)]:
  v=json.loads((ROOT/f'data/{f}.json').read_text());assert len(v)==n,(f,len(v));
  if f!='book':
@@ -28,7 +28,7 @@ assert (ROOT/'.github/workflows/release.yml').exists()
 print('Estrutura, tipos, dados, recursos e templates: OK')
 
 # v0.2.0 requires both modules, a playable intro image, sound and >=25 catalog entries.
-assert j['version']=='0.2.0'
+assert j['version']=='0.2.1'
 assert {r['id'] for r in j['relationships']['requires']}=={'dice-calculator','dice-so-nice'}
 for f in ['weapons-expanded','gear','consumables','armors','ammo','spells','rituals-expanded']:
  rows=json.loads((ROOT/f'data/{f}.json').read_text())
