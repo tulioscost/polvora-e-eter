@@ -76,3 +76,20 @@ Os testes checam dados, sintaxe, cálculos e simulações de API. **Não substit
 ## Publicação
 
 Use `.github/workflows/release.yml` para criar a Release `v0.2.0`. Ele empacota ZIP instalável, manifesto e checksums. O repositório remoto pode ter sido criado, mas o pacote aqui fornecido **não está publicado automaticamente**.
+
+
+## v0.2.4 — Economia, peso e munição
+
+A ficha agora usa **Créditos de Campanha (CR)**. O Mestre credita ou debita valores pelo cabeçalho, e as requisições são compradas na aba **Requisições**. A venda de uma unidade restitui metade do preço-base.
+
+**Limite de carga:** FOR × 2 + 3. Todos os itens físicos possuem peso e preço. Itens depositados são excluídos da carga. Excesso de até 3 unidades penaliza testes físicos em −1d6; excesso maior em −2d6.
+
+**Recarga:** use apenas munição compatível no inventário ou um carregador próprio de reserva; munição incompatível não abastece armas. O estoque estratégico do esquadrão não fornece cartuchos automaticamente.
+
+**Farmácia de Éter:** o novo catálogo `data/field-pharmacy.json` inclui 30 tratamentos e compostos inteiramente ficcionais com efeitos sobre PV, BPM, Éter, Ressonância e bônus temporários. Consulte `ADENDO_ECONOMIA_E_LOGISTICA_024.md`.
+
+**Publicação:** o workflow `.github/workflows/release.yml` produz `system.json`, `polvora-e-eter.zip` e checksums para a Release. É necessário ter permissão de escrita no repositório GitHub.
+
+## Espécies e Soldo — v0.2.5
+
+A ficha do personagem tem campo **Espécie** (Humano, Sanguessuga, Licano) e aba de características. Os traços serão gerados no inventário, sem excluir itens manuais. Licanos se transformam por ação na aba Espécie. Na ficha Esquadrão, um GM marca quem participou, registra a saída e encerra a missão no quadro de tesouraria. O programa credita o CR devido uma única vez por missão/participante. Consulte `SUPLEMENTO_ESPECIES_E_SOLDOS_025.md`.

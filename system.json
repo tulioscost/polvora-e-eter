@@ -1,8 +1,8 @@
 {
   "id": "polvora-e-eter",
   "title": "Pólvora & Éter",
-  "description": "Pólvora & Éter 0.2.2: melhorias visuais e mecânicas: dados Dice So Nice obrigatórios, RD automática, dano aplicado e visor de Éter.",
-  "version": "0.2.2",
+  "description": "Pólvora & Éter: espécies humanas, sanguessugas e licanos; transformação; traços raciais e soldos de campanha automáticos.",
+  "version": "0.2.5",
   "authors": [
     {
       "name": "tulioscost",
@@ -108,6 +108,11 @@
         ]
       },
       "magia": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "racial": {
         "htmlFields": [
           "description"
         ]
