@@ -1,0 +1,1010 @@
+[
+  {
+    "name": "Primeiro Disparo",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 no primeiro ataque desde cobertura ou após preparo; não se ativa em tiro surpresa sem linha plausível.</p>",
+      "tier": 1,
+      "path": "Linha",
+      "trail": "Fuzileiro",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Transição de Abrigo",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 em teste de travessia entre coberturas sob fogo; não equivale a teleporte nem a imunidade a zona batida.</p>",
+      "tier": 3,
+      "path": "Linha",
+      "trail": "Fuzileiro",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Linha de Proteção",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, ao coordenar fogo com aliados preparados, <strong>até dois aliados</strong> recebem +1d6 no próximo teste para avançar entre posições seguras; compartilhe risco e consuma o apoio disponível.</p>",
+      "tier": 6,
+      "path": "Linha",
+      "trail": "Fuzileiro",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Janela de Assalto",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, após uma cena de reconhecimento e <strong>1 Suprimento</strong>, reduza em 1 um relógio de flanqueamento/defesa inimiga plausível; não elimina metralhadora intacta.</p>",
+      "tier": 9,
+      "path": "Linha",
+      "trail": "Fuzileiro",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Mãos de Lama",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 em Engenharia para abrir passagem, reforçar abrigo ou lidar com obstáculo com ferramentas.</p>",
+      "tier": 1,
+      "path": "Linha",
+      "trail": "Sapador",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Leitura do Terreno",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 em Percepção/Estratégia para identificar <strong>uma</strong> rota física de avanço segura ou um ponto de erosão visível.</p>",
+      "tier": 3,
+      "path": "Linha",
+      "trail": "Sapador",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Passarela de Campanha",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, com Peças e cena preparatória, <strong>até dois aliados</strong> têm +1d6 no próximo teste para atravessar obstáculo ou evacuar ferido; passagem continua vulnerável.</p>",
+      "tier": 6,
+      "path": "Linha",
+      "trail": "Sapador",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Ruptura Controlada",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, com <strong>1 Peças + uma cena</strong>, reduza em 1 o relógio de obstáculo estrutural, caso haja acesso e ferramentas; não fornece parâmetros reais de demolição.</p>",
+      "tier": 9,
+      "path": "Linha",
+      "trail": "Sapador",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Triagem Rápida",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para <strong>estabilização</strong> com Medicina e kit; nunca concede PV instantâneos.</p>",
+      "tier": 1,
+      "path": "Apoio",
+      "trail": "Médico de Campanha",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Mãos Firmes",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 em intervenção clínica ficcional realizada com iluminação, instrumentos e acesso plausíveis.</p>",
+      "tier": 3,
+      "path": "Apoio",
+      "trail": "Médico de Campanha",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Evacuação Prioritária",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, após montar rota sanitária, <strong>até dois aliados</strong> obtêm +1d6 ao transportar e proteger feridos; não aumenta ações por rodada.</p>",
+      "tier": 6,
+      "path": "Apoio",
+      "trail": "Médico de Campanha",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Posto de Socorro",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, use <strong>1 Medicina + uma cena</strong> em lugar seguro para reduzir em 1 relógio de infecção, evacuação ou colapso de hospital; não ressuscita mortos.</p>",
+      "tier": 9,
+      "path": "Apoio",
+      "trail": "Médico de Campanha",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Remendo de Marcha",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, reparo <strong>temporário</strong> Engenharia D1 sem gastar Peças, desde que exista material improvisável e acesso.</p>",
+      "tier": 1,
+      "path": "Apoio",
+      "trail": "Mecânico de Campo",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Diagnóstico Sob Fogo",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 ao localizar avaria em equipamento acessível; não equivale a reparo gratuito.</p>",
+      "tier": 3,
+      "path": "Apoio",
+      "trail": "Mecânico de Campo",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Oficina Improvisada",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, após preparo, <strong>até dois aliados</strong> recebem +1d6 em operação de recuperação ou remoção de máquina; deve haver ferramentas.</p>",
+      "tier": 6,
+      "path": "Apoio",
+      "trail": "Mecânico de Campo",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Revisão Excepcional",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, <strong>1 Peças + uma cena</strong> para reduzir em 1 relógio de Avaria de uma máquina, exigindo teste de Engenharia adequado.</p>",
+      "tier": 9,
+      "path": "Apoio",
+      "trail": "Mecânico de Campo",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Voz de Comando",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 ao próximo teste de aliado consciente que execute ordem concreta; comandante compartilha risco de sua decisão.</p>",
+      "tier": 1,
+      "path": "Comando",
+      "trail": "Oficial de Linha",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Ordem Alternativa",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 em Estratégia/Disciplina para trocar um plano manifestamente inviável antes de sua execução.</p>",
+      "tier": 3,
+      "path": "Comando",
+      "trail": "Oficial de Linha",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Formação Coesa",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, com preparação, <strong>até dois aliados</strong> recebem +1d6 em ações distintas voltadas ao mesmo objetivo; bônus não vale para tiros idênticos de uma rajada coletiva.</p>",
+      "tier": 6,
+      "path": "Comando",
+      "trail": "Oficial de Linha",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Ruptura Evitada",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, gaste <strong>1 Moral coletiva ou 1 Suprimento + uma cena</strong> para reduzir em 1 relógio de dispersão ou cerco, com retirada ou reserva plausíveis.</p>",
+      "tier": 9,
+      "path": "Comando",
+      "trail": "Oficial de Linha",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Fio Recuperado",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para restabelecer canal de comunicação acessível; sem criar cobertura instantânea universal.</p>",
+      "tier": 1,
+      "path": "Comando",
+      "trail": "Sinaleiro",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Escuta Direcional",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para identificar <strong>uma</strong> fonte de sinal ou interferência, com aparelho adequado.</p>",
+      "tier": 3,
+      "path": "Comando",
+      "trail": "Sinaleiro",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Rede Redundante",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, preparada, <strong>até dois aliados</strong> recebem +1d6 para ações coordenadas em setores diferentes enquanto a rede opera.</p>",
+      "tier": 6,
+      "path": "Comando",
+      "trail": "Sinaleiro",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Mensagem Prioritária",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, use <strong>1 Comunicações + uma cena</strong> para reduzir em 1 relógio de atraso de reforço, extração ou aviso de bombardeio; o destinatário deve existir.</p>",
+      "tier": 9,
+      "path": "Comando",
+      "trail": "Sinaleiro",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Olhos Entre Ruínas",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para perceber emboscada detectável.</p>",
+      "tier": 1,
+      "path": "Reconhecimento",
+      "trail": "Batedor",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Rastros Interrompidos",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para interpretar passagem de tropas ou criaturas por terreno transformado.</p>",
+      "tier": 3,
+      "path": "Reconhecimento",
+      "trail": "Batedor",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Caminho Paralelo",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, após reconhecimento, <strong>até dois aliados</strong> recebem +1d6 para infiltração ou retirada por rota alternativa.</p>",
+      "tier": 6,
+      "path": "Reconhecimento",
+      "trail": "Batedor",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Mapa de Oportunidade",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, gaste <strong>1 Suprimento + uma cena</strong> para reduzir em 1 um relógio de patrulha/cerco por desvio de rota realmente disponível.</p>",
+      "tier": 9,
+      "path": "Reconhecimento",
+      "trail": "Batedor",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Passos Curtos",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 ao atravessar furtivamente passagem adjacente com ocultação concreta.</p>",
+      "tier": 1,
+      "path": "Reconhecimento",
+      "trail": "Infiltrador",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Disfarce Incompleto",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para sustentar identidade falsa já documentada; não funciona ante pessoas que conheçam o personagem.</p>",
+      "tier": 3,
+      "path": "Reconhecimento",
+      "trail": "Infiltrador",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Saída de Emergência",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, após preparação, <strong>até dois aliados</strong> recebem +1d6 em extração clandestina com uma rota existente.</p>",
+      "tier": 6,
+      "path": "Reconhecimento",
+      "trail": "Infiltrador",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Silenciar o Alarme",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, gaste <strong>1 Peças + uma cena</strong> para reduzir em 1 relógio de detecção de um posto específico; não apaga alarmes já transmitidos.</p>",
+      "tier": 9,
+      "path": "Reconhecimento",
+      "trail": "Infiltrador",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Circuito de Sangue-Frio",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 ao conter reação éterica já identificada com foco adequado.</p>",
+      "tier": 1,
+      "path": "Arcanismo",
+      "trail": "Ritualista de Campanha",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Símbolo Estável",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 em Ritual para preservar proteção existente durante interferência, sem anular custo de Éter.</p>",
+      "tier": 3,
+      "path": "Arcanismo",
+      "trail": "Ritualista de Campanha",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Círculo Partilhado",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, com rito e material adequados, <strong>até dois aliados</strong> recebem +1d6 no próximo teste de resistir a uma influência específica, já identificada.</p>",
+      "tier": 6,
+      "path": "Arcanismo",
+      "trail": "Ritualista de Campanha",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Fecho de Emergência",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, <strong>1 Carga de Éter + uma cena</strong> para reduzir em 1 relógio de manifestação conhecida; requer teste e contramedida válida.</p>",
+      "tier": 9,
+      "path": "Arcanismo",
+      "trail": "Ritualista de Campanha",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Sinais de Incursão",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para reconhecer indício de assombração e uma possível contramedida.</p>",
+      "tier": 1,
+      "path": "Arcanismo",
+      "trail": "Inquisidor de Campo",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Contradição no Arquivo",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para detectar falso padrão em documentos sobrenaturais ou militares consultáveis.</p>",
+      "tier": 3,
+      "path": "Arcanismo",
+      "trail": "Inquisidor de Campo",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Doutrina de Contenção",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, após brief investigativo, <strong>até dois aliados</strong> recebem +1d6 contra um perigo sobrenatural específico pesquisado.</p>",
+      "tier": 6,
+      "path": "Arcanismo",
+      "trail": "Inquisidor de Campo",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Interdição Documentada",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, <strong>1 Comunicações ou 1 Éter + uma cena</strong> para reduzir em 1 relógio de propagação de anomalia conhecida, desde que possa impedir um vetor real.</p>",
+      "tier": 9,
+      "path": "Arcanismo",
+      "trail": "Inquisidor de Campo",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Motor no Limite",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 em manobra evasiva com veículo operacional; ocupantes compartilham risco.</p>",
+      "tier": 1,
+      "path": "Blindados",
+      "trail": "Condutor",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Marcha Econômica",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para evitar pane durante deslocamento difícil; <strong>não</strong> cria combustível e não altera custo obrigatório de viagem.</p>",
+      "tier": 3,
+      "path": "Blindados",
+      "trail": "Condutor",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Mudança de Coluna",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, após rota planejada, <strong>até dois aliados</strong> recebem +1d6 para embarque, desembarque ou ação em movimento apoiada pelo veículo.</p>",
+      "tier": 6,
+      "path": "Blindados",
+      "trail": "Condutor",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Corredor Blindado",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, <strong>1 Combustível + uma cena</strong> para reduzir em 1 relógio de bloqueio/retirada quando veículo e rota permitirem.</p>",
+      "tier": 9,
+      "path": "Blindados",
+      "trail": "Condutor",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Placas de Sacrifício",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 ao diagnosticar ponto frágil de veículo ou arma pesada, com acesso/sensores.</p>",
+      "tier": 1,
+      "path": "Blindados",
+      "trail": "Engenheiro de Ferro",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Casco de Emergência",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 em Engenharia para conter avaria já declarada; não aumenta RD permanente.</p>",
+      "tier": 3,
+      "path": "Blindados",
+      "trail": "Engenheiro de Ferro",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Tripulação Afinada",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, após manutenção, <strong>até dois aliados</strong> recebem +1d6 para operações diferentes de uma tripulação que compartilhe o veículo.</p>",
+      "tier": 6,
+      "path": "Blindados",
+      "trail": "Engenheiro de Ferro",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Recalibragem de Torre",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, <strong>1 Peças + uma cena</strong> para reduzir em 1 relógio de Avaria ou pane da torre; não gera tiros extras.</p>",
+      "tier": 9,
+      "path": "Blindados",
+      "trail": "Engenheiro de Ferro",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Registro sem Perdas",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para identificar desvio, falta ou rota logística; não cria suprimentos.</p>",
+      "tier": 1,
+      "path": "Retaguarda",
+      "trail": "Intendente",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Troca Justa",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 ao negociar aquisição legítima, envolvendo contrapartida concreta.</p>",
+      "tier": 3,
+      "path": "Retaguarda",
+      "trail": "Intendente",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Distribuição Prioritária",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, com planejamento, <strong>até dois aliados</strong> recebem +1d6 no teste para conservar, transportar ou redistribuir material sob risco.</p>",
+      "tier": 6,
+      "path": "Retaguarda",
+      "trail": "Intendente",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Comboio de Socorro",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, gaste <strong>1 Prestígio ou 1 Suprimento + uma cena</strong> para reduzir em 1 relógio de fome, evacuação ou isolamento, com rota logística viável.</p>",
+      "tier": 9,
+      "path": "Retaguarda",
+      "trail": "Intendente",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Palavra Testemunhada",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 na mediação de conflito entre civis e tropas quando houver confiança mínima.</p>",
+      "tier": 1,
+      "path": "Retaguarda",
+      "trail": "Articulador",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Leitura de Lealdades",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para revelar interesse ou contradição de um grupo já investigado; não lê mente.</p>",
+      "tier": 3,
+      "path": "Retaguarda",
+      "trail": "Articulador",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Acordo de Trânsito",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, após negociação, <strong>até dois aliados</strong> recebem +1d6 para cumprir os termos de acesso seguro concedido.</p>",
+      "tier": 6,
+      "path": "Retaguarda",
+      "trail": "Articulador",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Corredor Humanitário",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, <strong>1 Prestígio ou 1 Moral + uma cena</strong> para reduzir em 1 relógio de deslocamento de civis ou retaliação, desde que exista interlocutor.</p>",
+      "tier": 9,
+      "path": "Retaguarda",
+      "trail": "Articulador",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Sinais de Antiguidade",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para reconhecer aviso de pacto territorial tradicional; não estabelece sua veracidade sem contexto.</p>",
+      "tier": 1,
+      "path": "Antiguidade",
+      "trail": "Guardião de Marcos",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Respeito do Limiar",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 ao cumprir costume local documentado para atravessar lugar vedado.</p>",
+      "tier": 3,
+      "path": "Antiguidade",
+      "trail": "Guardião de Marcos",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Proteção Juramentada",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, após pacto real, <strong>até dois aliados</strong> recebem +1d6 ao resistir à ameaça específica nomeada na promessa.</p>",
+      "tier": 6,
+      "path": "Antiguidade",
+      "trail": "Guardião de Marcos",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Dívida Restituída",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, <strong>1 Recurso apropriado + uma cena</strong>, e aceitação de guardião local, para reduzir em 1 relógio de violação de pacto; não há barganha unilateral.</p>",
+      "tier": 9,
+      "path": "Antiguidade",
+      "trail": "Guardião de Marcos",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Escuta Paciente",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 ao negociar com entidade capaz de diálogo quando sua regra de interlocução for conhecida.</p>",
+      "tier": 1,
+      "path": "Antiguidade",
+      "trail": "Mediador Antigo",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Nome que Importa",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/cena, +1d6 para encontrar evidência de identidade ou obrigação de criatura lendária; pesquisa real necessária.</p>",
+      "tier": 3,
+      "path": "Antiguidade",
+      "trail": "Mediador Antigo",
+      "usage": "1/cena",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Trégua do Limiar",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, após cumprimento de condição ritual e consentimento da outra parte, <strong>até dois aliados</strong> recebem +1d6 para retirada ou negociação protegida.</p>",
+      "tier": 6,
+      "path": "Antiguidade",
+      "trail": "Mediador Antigo",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Termos de Paz",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1/sessão, <strong>1 Recurso relevante + uma cena</strong> para reduzir em 1 relógio de confronto sobrenatural negociável; acordo gera obrigação registrável.</p>",
+      "tier": 9,
+      "path": "Antiguidade",
+      "trail": "Mediador Antigo",
+      "usage": "1/sessão",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Última Cobertura",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>tornar possível a retirada de um aliado de uma consequência letal evitável, perdendo definitivamente sua posição militar ou um recurso raro.</p>",
+      "tier": 12,
+      "path": "Linha",
+      "trail": "Geral",
+      "usage": "1/campanha",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Cirurgia Impossível",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>manter vítima viva tempo suficiente para transferência que já tem rota viável; exige hospital, custo permanente e não desfaz morte consumada.</p>",
+      "tier": 12,
+      "path": "Apoio",
+      "trail": "Geral",
+      "usage": "1/campanha",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Ordem Recusada",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>interromper execução de ordem letal ainda não consumada, sacrificando patente, cadeia de comando ou reputação estrutural.</p>",
+      "tier": 12,
+      "path": "Comando",
+      "trail": "Geral",
+      "usage": "1/campanha",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Sinal Até o Fim",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>transmitir aviso que permite evacuação antes da destruição, perdendo aparelho irrecuperável e isolamento político permanente.</p>",
+      "tier": 12,
+      "path": "Comunicações",
+      "trail": "Geral",
+      "usage": "1/campanha",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Ninguém Ficará Anônimo",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>salvar testemunha essencial com prova preservada, sacrificando a identidade operacional do investigador.</p>",
+      "tier": 12,
+      "path": "Reconhecimento",
+      "trail": "Geral",
+      "usage": "1/campanha",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Lacre de Sacrifício",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>bloquear por tempo suficiente uma manifestação anunciada, perdendo acesso permanente à prática ritual escolhida.</p>",
+      "tier": 12,
+      "path": "Arcanismo",
+      "trail": "Geral",
+      "usage": "1/campanha",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "O Último Motor",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>permitir que passageiros escapem de desastre inevitável do veículo, perdendo o veículo e seu estatuto de veterano junto à unidade.</p>",
+      "tier": 12,
+      "path": "Blindados",
+      "trail": "Geral",
+      "usage": "1/campanha",
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Pacto Final",
+    "type": "talento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>evitar execução de uma comunidade ameaçada ao assumir obrigação permanente, pública e exequível; entidade ou comandante precisa poder aceitar o acordo.</p>",
+      "tier": 12,
+      "path": "Antiguidade/Retaguarda",
+      "trail": "Geral",
+      "usage": "1/campanha",
+      "active": false,
+      "spent": false
+    }
+  }
+]

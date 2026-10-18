@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Fuzileiro",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>cobertura, incursões, fortificação</p>",
+      "path": "Linha",
+      "trail": "Fuzileiro"
+    }
+  },
+  {
+    "name": "Sapador",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>cobertura, incursões, fortificação</p>",
+      "path": "Linha",
+      "trail": "Sapador"
+    }
+  },
+  {
+    "name": "Médico de Campanha",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>preservação de pessoas e de infraestrutura</p>",
+      "path": "Apoio",
+      "trail": "Médico de Campanha"
+    }
+  },
+  {
+    "name": "Mecânico de Campo",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>preservação de pessoas e de infraestrutura</p>",
+      "path": "Apoio",
+      "trail": "Mecânico de Campo"
+    }
+  },
+  {
+    "name": "Oficial de Linha",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>liderança, ordens e informação</p>",
+      "path": "Comando",
+      "trail": "Oficial de Linha"
+    }
+  },
+  {
+    "name": "Sinaleiro",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>liderança, ordens e informação</p>",
+      "path": "Comando",
+      "trail": "Sinaleiro"
+    }
+  },
+  {
+    "name": "Batedor",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>rotas, sigilo, contramedidas</p>",
+      "path": "Reconhecimento",
+      "trail": "Batedor"
+    }
+  },
+  {
+    "name": "Infiltrador",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>rotas, sigilo, contramedidas</p>",
+      "path": "Reconhecimento",
+      "trail": "Infiltrador"
+    }
+  },
+  {
+    "name": "Ritualista de Campanha",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>contenção e investigação do Éter</p>",
+      "path": "Arcanismo",
+      "trail": "Ritualista de Campanha"
+    }
+  },
+  {
+    "name": "Inquisidor de Campo",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>contenção e investigação do Éter</p>",
+      "path": "Arcanismo",
+      "trail": "Inquisidor de Campo"
+    }
+  },
+  {
+    "name": "Condutor",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>veículos, deslocamento e falhas</p>",
+      "path": "Blindados",
+      "trail": "Condutor"
+    }
+  },
+  {
+    "name": "Engenheiro de Ferro",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>veículos, deslocamento e falhas</p>",
+      "path": "Blindados",
+      "trail": "Engenheiro de Ferro"
+    }
+  },
+  {
+    "name": "Intendente",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>logística, relações políticas e civis</p>",
+      "path": "Retaguarda",
+      "trail": "Intendente"
+    }
+  },
+  {
+    "name": "Articulador",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>logística, relações políticas e civis</p>",
+      "path": "Retaguarda",
+      "trail": "Articulador"
+    }
+  },
+  {
+    "name": "Guardião de Marcos",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>pactos, culturas locais e presenças antigas</p>",
+      "path": "Antiguidade",
+      "trail": "Guardião de Marcos"
+    }
+  },
+  {
+    "name": "Mediador Antigo",
+    "type": "especializacao",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>pactos, culturas locais e presenças antigas</p>",
+      "path": "Antiguidade",
+      "trail": "Mediador Antigo"
+    }
+  }
+]

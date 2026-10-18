@@ -1,0 +1,18 @@
+<div class="pe-root pe-item">
+ <header class="pe-header"><img class="pe-portrait" src="{{item.img}}" data-action="editImage" data-edit="img" title="Alterar ícone"/><div class="pe-heading"><div class="pe-eyebrow">PÓLVORA &amp; ÉTER · ITEM / ARQUIVO</div><input class="pe-name" name="name" value="{{item.name}}"><small>{{item.type}}</small></div></header>
+ <section class="pe-section"><h2>Propriedades</h2><div class="pe-fields">
+ {{#if isWeapon}}
+   <label>Dano fixo<input name="system.damage" type="number" min="0" value="{{system.damage}}"></label>
+   <label>Alcance<select name="system.range"><option value="próximo" {{#if (peEq system.range 'próximo')}}selected{{/if}}>Próximo</option><option value="curto" {{#if (peEq system.range 'curto')}}selected{{/if}}>Curto</option><option value="médio" {{#if (peEq system.range 'médio')}}selected{{/if}}>Médio</option><option value="longo" {{#if (peEq system.range 'longo')}}selected{{/if}}>Longo</option></select></label>
+   <label>Tags (SUP, REST, ANT, ETER, etc.)<input name="system.tags" value="{{system.tags}}"></label>
+   <label>Capacidade carregador<input name="system.ammo.capacity" type="number" min="0" value="{{system.ammo.capacity}}"></label>
+   <label>Balas no carregador<input name="system.ammo.magazine" type="number" min="0" value="{{system.ammo.magazine}}"></label>
+   <label>Carregadores reserva<input name="system.ammo.reserve" type="number" min="0" value="{{system.ammo.reserve}}"></label>
+ {{/if}}
+ {{#if isArmor}}<label>RD<input name="system.rd" type="number" min="0" max="4" value="{{system.rd}}"></label><label>Durabilidade %<input name="system.durability" type="number" min="0" max="100" value="{{system.durability}}"></label>{{/if}}
+ {{#if isTalent}}<label>Patamar<input name="system.tier" type="number" min="1" max="12" value="{{system.tier}}"></label><label>Caminho<input name="system.path" value="{{system.path}}"></label><label>Trilha<input name="system.trail" value="{{system.trail}}"></label><label>Uso<input name="system.usage" value="{{system.usage}}"></label>{{/if}}
+ {{#if isRitual}}<label>Dificuldade<input name="system.difficulty" type="number" min="1" max="5" value="{{system.difficulty}}"></label><label>Custo Éter<input name="system.cost" type="number" min="0" value="{{system.cost}}"></label>{{/if}}
+ {{#if isVehicle}}<label>Integridade<input name="system.integridade" type="number" min="0" value="{{system.integridade}}"></label><label>Estrutura<input name="system.estrutura" type="number" min="0" value="{{system.estrutura}}"></label><label>Avaria<input name="system.avaria" type="number" min="0" value="{{system.avaria}}"></label><label>Blindagem<input name="system.blindagem" type="number" min="0" value="{{system.blindagem}}"></label>{{/if}}
+ <label>Acesso<input name="system.access" value="{{system.access}}"></label><label>Carga<input name="system.bulk" type="number" min="0" value="{{system.bulk}}"></label>
+ </div><h2>Descrição / regras</h2><div class="pe-description">{{{system.description}}}</div><textarea name="system.description" rows="11">{{system.description}}</textarea><p class="pe-muted">Edite o HTML, que será exibido no item. Salva automaticamente ao alterar o campo.</p></section>
+</div>

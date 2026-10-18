@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Defesa em Profundidade",
+    "type": "doutrina",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>preparar uma segunda posição segura antes do contato, se existirem recursos de fortificação</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Rede de Informantes",
+    "type": "doutrina",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>transformar uma informação Provável em Confirmada após pesquisa/contato real</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Evacuação Primeiro",
+    "type": "doutrina",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>uma pessoa incapacitada recebe prioridade de extração por rota previamente preparada</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Engenharia Dispersa",
+    "type": "doutrina",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilitar reparo temporário de passagem com ferramenta distribuída, sem recuperar recurso de Estado</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Círculo de Proteção",
+    "type": "doutrina",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>revelar previamente uma contramedida plausível de tipo éterico já documentado, não conceder sucesso automático</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Comando de Missão",
+    "type": "doutrina",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>permitir replanejar objetivo secundário no briefing sem penalizar Prestígio, preservadas as obrigações assumidas</p>",
+      "active": false
+    }
+  }
+]

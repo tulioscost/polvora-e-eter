@@ -1,0 +1,293 @@
+[
+  {
+    "name": "Iria Valcorte",
+    "type": "personagem",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "caminho": "Linha",
+      "trilha": "Fuzileiro",
+      "origin": "Padrão",
+      "atributos": {
+        "FOR": 1,
+        "AGI": 3,
+        "ROB": 3,
+        "CAR": 1,
+        "MOR": 2,
+        "FIB": 2,
+        "INT": 1,
+        "RAC": 1,
+        "VON": 1
+      },
+      "pericias": {
+        "Pontaria": 3,
+        "Reflexos": 2,
+        "Coragem": 2,
+        "Percepção": 1
+      },
+      "pv": {
+        "value": 15,
+        "max": 15
+      },
+      "bpm": {
+        "value": 60
+      },
+      "notes": "Personagem pré-gerado do §44. Kit descrito no manual. Vínculos/ordem recusada/segredo devem ser escolhidos pelo jogador."
+    },
+    "items": [
+      {
+        "name": "Primeiro Disparo",
+        "type": "talento",
+        "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+        "system": {
+          "description": "<p>1/cena, +1d6 no primeiro ataque desde cobertura ou após preparo; não se ativa em tiro surpresa sem linha plausível.</p>",
+          "tier": 1,
+          "path": "Linha",
+          "trail": "Fuzileiro",
+          "usage": "1/cena",
+          "active": false,
+          "spent": false
+        }
+      },
+      {
+        "name": "Fuzil de ferrolho",
+        "type": "arma",
+        "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+        "system": {
+          "description": "<p>referência de infantaria</p>",
+          "damage": 3,
+          "range": "médio",
+          "bulk": 2,
+          "access": "C1",
+          "tags": "",
+          "ammo": {
+            "magazine": 6,
+            "capacity": 6,
+            "reserve": 2
+          },
+          "usesAmmo": true,
+          "slot": "arma",
+          "equipped": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "Deren Kael",
+    "type": "personagem",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "caminho": "Linha",
+      "trilha": "Sapador",
+      "origin": "Padrão",
+      "atributos": {
+        "FOR": 2,
+        "AGI": 1,
+        "ROB": 2,
+        "CAR": 1,
+        "MOR": 1,
+        "FIB": 2,
+        "INT": 3,
+        "RAC": 2,
+        "VON": 1
+      },
+      "pericias": {
+        "Engenharia": 3,
+        "Arrombamento": 2,
+        "Atletismo": 1,
+        "Percepção": 1,
+        "Sobrevivência": 1
+      },
+      "pv": {
+        "value": 10,
+        "max": 10
+      },
+      "bpm": {
+        "value": 60
+      },
+      "notes": "Personagem pré-gerado do §44. Kit descrito no manual. Vínculos/ordem recusada/segredo devem ser escolhidos pelo jogador."
+    },
+    "items": [
+      {
+        "name": "Mãos de Lama",
+        "type": "talento",
+        "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+        "system": {
+          "description": "<p>1/cena, +1d6 em Engenharia para abrir passagem, reforçar abrigo ou lidar com obstáculo com ferramentas.</p>",
+          "tier": 1,
+          "path": "Linha",
+          "trail": "Sapador",
+          "usage": "1/cena",
+          "active": false,
+          "spent": false
+        }
+      },
+      {
+        "name": "Ferramenta de campanha",
+        "type": "arma",
+        "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+        "system": {
+          "description": "<p>permite manutenção simples</p>",
+          "damage": 1,
+          "range": "próximo",
+          "bulk": 1,
+          "access": "C0",
+          "tags": "",
+          "ammo": {
+            "magazine": 0,
+            "capacity": 0,
+            "reserve": 0
+          },
+          "usesAmmo": false,
+          "slot": "arma",
+          "equipped": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mara Alen",
+    "type": "personagem",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "caminho": "Apoio",
+      "trilha": "Médico de Campanha",
+      "origin": "Padrão",
+      "atributos": {
+        "FOR": 1,
+        "AGI": 1,
+        "ROB": 2,
+        "CAR": 1,
+        "MOR": 2,
+        "FIB": 2,
+        "INT": 3,
+        "RAC": 1,
+        "VON": 2
+      },
+      "pericias": {
+        "Medicina": 3,
+        "Resistência": 1,
+        "Coragem": 1,
+        "Pesquisa": 1,
+        "Foco": 1,
+        "Disciplina": 1
+      },
+      "pv": {
+        "value": 10,
+        "max": 10
+      },
+      "bpm": {
+        "value": 60
+      },
+      "notes": "Personagem pré-gerado do §44. Kit descrito no manual. Vínculos/ordem recusada/segredo devem ser escolhidos pelo jogador."
+    },
+    "items": [
+      {
+        "name": "Triagem Rápida",
+        "type": "talento",
+        "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+        "system": {
+          "description": "<p>1/cena, +1d6 para <strong>estabilização</strong> com Medicina e kit; nunca concede PV instantâneos.</p>",
+          "tier": 1,
+          "path": "Apoio",
+          "trail": "Médico de Campanha",
+          "usage": "1/cena",
+          "active": false,
+          "spent": false
+        }
+      },
+      {
+        "name": "Pistola de serviço",
+        "type": "arma",
+        "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+        "system": {
+          "description": "<p>arma lateral de referência</p>",
+          "damage": 2,
+          "range": "curto",
+          "bulk": 1,
+          "access": "C1",
+          "tags": "",
+          "ammo": {
+            "magazine": 6,
+            "capacity": 6,
+            "reserve": 2
+          },
+          "usesAmmo": true,
+          "slot": "arma",
+          "equipped": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "Noe Vitra",
+    "type": "personagem",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "caminho": "Arcanismo",
+      "trilha": "Ritualista de Campanha",
+      "origin": "Padrão",
+      "atributos": {
+        "FOR": 1,
+        "AGI": 1,
+        "ROB": 1,
+        "CAR": 1,
+        "MOR": 2,
+        "FIB": 2,
+        "INT": 3,
+        "RAC": 2,
+        "VON": 2
+      },
+      "pericias": {
+        "Ritual": 3,
+        "Investigação": 2,
+        "Pesquisa": 2,
+        "Lucidez": 1
+      },
+      "pv": {
+        "value": 5,
+        "max": 5
+      },
+      "bpm": {
+        "value": 60
+      },
+      "notes": "Personagem pré-gerado do §44. Kit descrito no manual. Vínculos/ordem recusada/segredo devem ser escolhidos pelo jogador."
+    },
+    "items": [
+      {
+        "name": "Circuito de Sangue-Frio",
+        "type": "talento",
+        "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+        "system": {
+          "description": "<p>1/cena, +1d6 ao conter reação éterica já identificada com foco adequado.</p>",
+          "tier": 1,
+          "path": "Arcanismo",
+          "trail": "Ritualista de Campanha",
+          "usage": "1/cena",
+          "active": false,
+          "spent": false
+        }
+      },
+      {
+        "name": "Pistola de serviço",
+        "type": "arma",
+        "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+        "system": {
+          "description": "<p>arma lateral de referência</p>",
+          "damage": 2,
+          "range": "curto",
+          "bulk": 1,
+          "access": "C1",
+          "tags": "",
+          "ammo": {
+            "magazine": 6,
+            "capacity": 6,
+            "reserve": 2
+          },
+          "usesAmmo": true,
+          "slot": "arma",
+          "equipped": true
+        }
+      }
+    ]
+  }
+]

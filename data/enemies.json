@@ -1,0 +1,230 @@
+[
+  {
+    "name": "Recruta Perdido",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 2
+      },
+      "pv": {
+        "value": 10
+      },
+      "rd": 0,
+      "baseRD": 0,
+      "attackPool": 3,
+      "damage": 2,
+      "level": 1,
+      "description": "<p><strong>ROB 2; PV10; RD0; ataque 3d6, dano2, médio; Postura1.</strong> Padrão: protege amigo ferido e procura retirada. <strong>Especial:</strong> 1/cena, desloca-se para abrigo antes de ser observado se existir passagem. <strong>Contramedida:</strong> ordem de cessar-fogo, intimidação coerente ou contato com superior. <em>Encontro recomendado:</em> patrulhas de 1–3, menos ameaça que soldados regulares.</p>"
+    }
+  },
+  {
+    "name": "Soldado Regular",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 2
+      },
+      "pv": {
+        "value": 10
+      },
+      "rd": 1,
+      "baseRD": 1,
+      "attackPool": 4,
+      "damage": 3,
+      "level": 1,
+      "description": "<p><strong>ROB2; PV10; RD1; ataque 4d6, dano3, médio; Postura2.</strong> Padrão: mantém linha de trincheira. <strong>Especial:</strong> pode Vigiar uma passagem com sua ação, obedecendo gatilho anunciado. <strong>Contramedida:</strong> fumaça, flanco, corte de rádio ou rendição quando isolado. <em>Encontro recomendado:</em> 2–4, jamais pressupor luta até morte.</p>"
+    }
+  },
+  {
+    "name": "Sargento de Casamata",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 3
+      },
+      "pv": {
+        "value": 15
+      },
+      "rd": 1,
+      "baseRD": 1,
+      "attackPool": 5,
+      "damage": 3,
+      "level": 2,
+      "description": "<p><strong>ROB3; PV15; RD1; ataque 5d6, dano3, médio; Postura3.</strong> Padrão: protege setor com duas rotas. <strong>Especial:</strong> 1/cena concede +1d6 de ajuda efetiva a um subordinado (consome a própria oportunidade de coordenar, não uma ação ofensiva extra). <strong>Contramedida:</strong> isolar comandante ou abordar por túnel; pode aceitar rendição inimiga.</p>"
+    }
+  },
+  {
+    "name": "Operador de Metralhadora",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 2
+      },
+      "pv": {
+        "value": 10
+      },
+      "rd": 1,
+      "baseRD": 1,
+      "attackPool": 4,
+      "damage": 3,
+      "level": 2,
+      "description": "<p><strong>ROB2; PV10; RD1; ataque 4d6, dano3, médio, SUP/REST; Postura2.</strong> Padrão: controla corredor; necessita posição fixa. <strong>Especial:</strong> fogo de fixação com seus próprios custos, sem dano adicional. <strong>Contramedida:</strong> fumaça, outro corredor, interromper apoio e comunicação; operador não vigia simultaneamente se suprimiu.</p>"
+    }
+  },
+  {
+    "name": "Sapador das Ruínas",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 2
+      },
+      "pv": {
+        "value": 10
+      },
+      "rd": 1,
+      "baseRD": 1,
+      "attackPool": 4,
+      "damage": 2,
+      "level": 2,
+      "description": "<p><strong>ROB2; PV10; RD1; ataque 4d6, dano2, próximo; Postura2.</strong> Padrão: repara a defesa e procura rota subterrânea. <strong>Especial:</strong> 1/cena torna abrigo parcialmente acessível à sua equipe com Engenharia D1 e ferramenta. <strong>Contramedida:</strong> cortar acesso ao equipamento ou negociar passagem em troca de prisioneiros.</p>"
+    }
+  },
+  {
+    "name": "Vigia de Máscara Oca",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 2
+      },
+      "pv": {
+        "value": 8
+      },
+      "rd": 1,
+      "baseRD": 1,
+      "attackPool": 4,
+      "damage": 2,
+      "level": 2,
+      "description": "<p><strong>PV8 de manifestação; RD1; ataque 4d6, dano2, próximo.</strong> Padrão: repete ordem recebida por rádio antigo. <strong>Especial:</strong> uma vez na cena, +5 BPM por presságio se não houver gatilho equivalente. <strong>Contramedida:</strong> reproduzir instrução original, recuperar o aparelho/foco ou aplicar Selo de Vigília. <strong>Moral:</strong> nenhuma; quando foco se perde, manifestação se desfaz. Atacar PV somente dispersa até transmissão reiniciar.</p>"
+    }
+  },
+  {
+    "name": "Remanescente do Setor 19",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 2
+      },
+      "pv": {
+        "value": 15
+      },
+      "rd": 1,
+      "baseRD": 1,
+      "attackPool": 5,
+      "damage": 3,
+      "level": 3,
+      "description": "<p><strong>PV15 de manifestação; RD1; ataque 5d6, dano3, curto; Padrão:</strong> persegue portadores de registros adulterados. <strong>Especial:</strong> 1/cena ativa rádio acessível para produzir pista e acelerar 1 segmento de relógio já anunciado, sem criar segundo ataque. <strong>Contramedida:</strong> provar o documento falso, desligar condensador ou negociar testemunho correto. <strong>Moral:</strong> não persegue quem restitui a prova.</p>"
+    }
+  },
+  {
+    "name": "Cartógrafo Sem Rostos",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 2
+      },
+      "pv": {
+        "value": 12
+      },
+      "rd": 0,
+      "baseRD": 0,
+      "attackPool": 5,
+      "damage": 2,
+      "level": 3,
+      "description": "<p><strong>PV12 de manifestação; RD0; ataque 5d6, dano2, curto.</strong> Padrão: muda placas e mapas de portas. <strong>Especial:</strong> 1/cena altera uma rota de setor se um mapa falso estiver em uso (personagens percebem indícios antes). <strong>Contramedida:</strong> papel datado, testemunha viva ou cartografia feita por observação direta. Pode conversar por escrito.</p>"
+    }
+  },
+  {
+    "name": "Guardião da Última Fogueira",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 2
+      },
+      "pv": {
+        "value": 15
+      },
+      "rd": 2,
+      "baseRD": 2,
+      "attackPool": 4,
+      "damage": 3,
+      "level": 3,
+      "description": "<p><strong>PV15 de manifestação; RD2; ataque 4d6, dano3, próximo.</strong> Padrão: exige o cumprimento de uma promessa antes de permitir travessia. <strong>Especial:</strong> 1/cena cria cobertura parcial de cinzas em uma passagem. <strong>Contramedida:</strong> promessa revalidada, obrigação restituída, negociação com testemunha. Nunca inicia combate se o pacto é cumprido; atacar implica violação com efeito político local, não maldição global arbitrária.</p>"
+    }
+  },
+  {
+    "name": "Ambulância dos Nomes",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 2
+      },
+      "pv": {
+        "value": 10
+      },
+      "rd": 0,
+      "baseRD": 0,
+      "attackPool": 4,
+      "damage": 3,
+      "level": 4,
+      "description": "<p><strong>Integridade3, Estrutura3, Avaria4; ataque de área D2 circunstancial, dano3; nenhuma moral.</strong> Padrão: recolhe pessoas cuja identidade foi apagada. <strong>Especial:</strong> transporta alguém inconsciente sem matá-lo e avança relógio de “Registro de Cargas” quando não interrompida. <strong>Contramedida:</strong> decifrar etiquetas, libertar motorista cativo, cortar circuito éterico ou bloquear via. Fuzis comuns não reduzem Integridade automaticamente.</p>"
+    }
+  },
+  {
+    "name": "Tanque Ressonante",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 2
+      },
+      "pv": {
+        "value": 10
+      },
+      "rd": 0,
+      "baseRD": 0,
+      "attackPool": 4,
+      "damage": 2,
+      "level": 4,
+      "description": "<p><strong>Integridade5, Estrutura4, Avaria4, Combustível3; ação de canhão ANT ou relógio de área, nunca ambos na mesma rodada.</strong> Padrão: patrulha via férrea sob ordens de mortos. <strong>Especial:</strong> 1/cena detecta sinal éterico, revelando posição de emissor próximo, sem ataque gratuito. <strong>Contramedida:</strong> interromper transmissão, alcançar fraqueza pesquisada, atrair para rota inviável ou exigir retirada da tripulação. Risco a ocupantes precisa ser anunciado.</p>"
+    }
+  },
+  {
+    "name": "A Última Testemunha",
+    "type": "ameaca",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "atributos": {
+        "ROB": 2
+      },
+      "pv": {
+        "value": 10
+      },
+      "rd": 0,
+      "baseRD": 0,
+      "attackPool": 4,
+      "damage": 2,
+      "level": 5,
+      "description": "<p><strong>Sem PV de personagem até ser manifestada; nó de rede Integridade5, três focos com relógios de 4 segmentos.</strong> Padrão: força versões incompatíveis do mesmo acontecimento a tornarem-se “oficiais”. <strong>Especial:</strong> um foco ativo por rodada pode acelerar em 1 segmento <strong>um relógio previamente anunciado</strong>, nunca apagar personagem jogador nem ação concluída retroativamente. <strong>Contramedidas:</strong> (a) publicar o arquivo verdadeiro, (b) destruir dois focos, (c) negociar dispersão com guardiões locais, (d) isolar a rede e retirar civis. Destruir focos não exige esgotar PV de todos os inimigos. Sua origem ontológica pode continuar incerta mesmo após o final.<br><br><strong>Regra de terror justo:</strong> todas as ameaças têm pistas <strong>antes</strong> da consequência severa; cada criatura extraordinária apresenta ao menos uma via de contornar, investigar, bloquear, negociar ou fugir. Ameaças de área não decidem mortes sem que exista exposição declarada. O papel dos monstros é pôr valores e decisões sob pressão, não corrigir um “baixo desafio de combate” com penalidades arbitrárias.</p>"
+    }
+  }
+]

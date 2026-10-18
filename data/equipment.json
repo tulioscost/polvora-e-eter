@@ -1,0 +1,352 @@
+[
+  {
+    "name": "Colete de campanha",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>RD1. Durabilidade 100</p>",
+      "rd": 1,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Peitoral de placas",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>RD2. Durabilidade 100</p>",
+      "rd": 2,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Arnês de assalto",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>RD3. Durabilidade 100; deslocamento exigente pode prejudicar por carga</p>",
+      "rd": 3,
+      "durability": 100,
+      "access": "C3",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Armadura éterica especializada",
+    "type": "armadura",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>RD4. rara; requer manutenção e vedação, não cumulativa</p>",
+      "rd": 4,
+      "durability": 100,
+      "access": "C3",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Capacete de aço",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>proteção contextual. não soma RD geral a colete; protege efeito localizado se anunciado</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Máscara filtrante fictícia",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita travessia. precisa Filtros em exposição extensa</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Óculos de escuta espectral",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>revela presença. exige pesquisa/energia; não atinge invisíveis automaticamente</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Binóculo de campo",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1d6 reconhecimento preparado. 1/cena; não soma ferramenta pela mesma função</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Luneta de atirador",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita PREC. não concede bônus por si só, precisa descanso/apoio</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Rádio de mochila",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita contato. somente com sinal ≥50%, salvo circuito local</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Rádio de posto",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1d6 sinal preparado. 1/cena; infraestrutura elétrica</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Bobina de telefone de campanha",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>contato cabeado. depende de linha íntegra</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Kit médico compacto",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita estabilização. consome Medicina conforme procedimento</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Mochila de cirurgião",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1d6 tratamento preparado. uma vez/cena, local acessível</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Ferramentas de sapador",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita obra. pode conceder +1d6 se a ação já habilitada</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Caixa de manutenção de motores",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1d6 manutenção. 1/cena, Peças para reparo estável</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Kit de criptografia",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita decifração. exige INT + Criptografia e material</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Compasso de topógrafo",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1d6 navegação preparada. 1/cena, falha em Zonas Mortas</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Sonda de Ressonância",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>detecta sinal éterico. não determina se a entidade é hostil</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 2,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Cápsula de Éter",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1 Carga de Éter. até 3 Cargas pessoais por portador</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Filtro de ar",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1 uso significativo. consumo anunciado em exposição extensa</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Ração de campanha",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1 dia abstrato. não gera bônus mecânico</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C0",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Carga de Munição",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>1 uso tático expressivo. consumo conforme ação especial ou cena longa</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Livro de Pactos Regionais",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>pista tradicional. fornece hipótese, não solução sem investigação</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C2",
+      "bulk": 1,
+      "quantity": 1,
+      "equipped": false
+    }
+  },
+  {
+    "name": "Estojo de selos e giz",
+    "type": "equipamento",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>habilita ritual. material limitado; 1 ritual por uso relevante se consumido</p>",
+      "rd": 0,
+      "durability": 100,
+      "access": "C1",
+      "bulk": 0,
+      "quantity": 1,
+      "equipped": false
+    }
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Observador de Artilharia**",
+    "type": "ativo",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>cria um relógio de apoio 4 contra posição identificada acerto só quando relógio resolve; não 2 ataques / custo: Observador de Artilharia<em></em> (1 Munição)</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Ambulância e Equipe**",
+    "type": "ativo",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>rota/atendimento habilitados para até 2 pacientes não cura durante rodada, acesso necessário / custo: Ambulância e Equipe<em></em> (1 Medicina)</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Oficina Móvel**",
+    "type": "ativo",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>+1d6 em reparo estável na operação 1/cena com ferramenta; mesmo bônus não duplica kit / custo: Oficina Móvel<em></em> (1 Peças)</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Veículo de Escolta**",
+    "type": "ativo",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>transporte e uma passagem protegida blindado usa ficha própria e não é indestrutível / custo: Veículo de Escolta<em></em> (1 Combustível)</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Rede de Mensageiros**",
+    "type": "ativo",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>rota alternativa quando rádio falha depende de pessoas e trânsito possível / custo: Rede de Mensageiros<em></em> (1 Suprimento)</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Arquivo Éterico**",
+    "type": "ativo",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>fornece um documento/pista sobre categoria de anomalia antes da missão não resolve sozinho contramedida local / custo: Arquivo Éterico<em></em> (1 Éter)</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Protocolo Humanitário**",
+    "type": "ativo",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>contato civil/neutralidade útil em uma missão requer interlocução; pode causar dever público / custo: Protocolo Humanitário<em></em> (1 Prestígio)</p>",
+      "active": false
+    }
+  },
+  {
+    "name": "Guardas de Fronteira**",
+    "type": "ativo",
+    "img": "systems/polvora-e-eter/assets/ui/emblem.webp",
+    "system": {
+      "description": "<p>contato com mediador do pacto territorial relevante tradição pode negar ajuda ou impor condição / custo: Guardas de Fronteira<em></em> (1 Suprimento)</p>",
+      "active": false
+    }
+  }
+]

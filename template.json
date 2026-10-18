@@ -1,0 +1,45 @@
+{
+  "Actor": {
+    "templates": {
+      "core": {
+        "notes":"", "caminho":"Linha", "trilha":"Fuzileiro", "origin":"Padrão", "marcos":0,"traumas":0,
+        "atributos":{"FOR":1,"AGI":1,"ROB":1,"CAR":1,"MOR":1,"FIB":1,"INT":1,"RAC":1,"VON":1},
+        "pericias": {
+          "Combate":0,"Arrombamento":0,"Atletismo":0,"Carga":0,"Contenção":0,
+          "Pontaria":0,"Furtividade":0,"Reflexos":0,"Acrobacia":0,"Pilotagem":0,
+          "Resistência":0,"Fôlego":0,"Sobrevivência":0,"Tolerância":0,"Recuperação":0,
+          "Persuasão":0,"Intimidação":0,"Atuação":0,"Etiqueta":0,"Disfarce":0,
+          "Coragem":0,"Disciplina":0,"Ritual":0,"Determinação":0,"Integridade":0,
+          "Autocontrole":0,"Dor":0,"Persistência":0,"Foco":0,"Estabilidade":0,
+          "Medicina":0,"Engenharia":0,"Ciência":0,"Criptografia":0,"Pesquisa":0,
+          "Investigação":0,"Percepção":0,"Diagnóstico":0,"Navegação":0,"Estratégia":0,
+          "Concentração":0,"Tenacidade":0,"Ímpeto":0,"Controle":0,"Lucidez":0
+        },
+        "pv":{"value":5,"max":5},"bpm":{"value":65},"ressonancia":0,"eter":0,"municao":0,"pf":0,"baseRD":0,"rd":0,
+        "description":"","level":1,"attackPool":4,"damage":2
+      },
+      "unit": {
+        "notes":"","prestigio":0,"moral":3,
+        "estoques":{"Suprimentos":3,"Munição":2,"Peças":2,"Combustível":1,"Medicina":1,"Éter":1},
+        "estados":{"Integridade":4,"Comunicações":3,"Vedação":3,"Enfermaria":2},
+        "frentes":{"Karsk":3,"Ferrum":2,"Vesper":1,"Vigília":2,"Vidraúna":4},
+        "operacoes":0
+      }
+    },
+    "personagem":{"templates":["core"]},
+    "ameaca":{"templates":["core"]},
+    "esquadrao":{"templates":["unit"]}
+  },
+  "Item": {
+    "templates":{"common":{"description":"","quantity":1,"bulk":0,"access":"C0","equipped":false,"active":false,"spent":false}},
+    "arma":{"templates":["common"],"damage":2,"range":"médio","tags":"","usesAmmo":true,"ammo":{"magazine":6,"capacity":6,"reserve":2}},
+    "armadura":{"templates":["common"],"rd":1,"durability":100},
+    "equipamento":{"templates":["common"]},
+    "talento":{"templates":["common"],"tier":1,"path":"Linha","trail":"Fuzileiro","usage":"condicional"},
+    "ritual":{"templates":["common"],"difficulty":2,"cost":1},
+    "especializacao":{"templates":["common"],"path":"Linha","trail":"Fuzileiro"},
+    "ativo":{"templates":["common"]},
+    "doutrina":{"templates":["common"]},
+    "veiculo":{"templates":["common"],"integridade":3,"estrutura":3,"avaria":0,"blindagem":2,"combustivel":1}
+  }
+}

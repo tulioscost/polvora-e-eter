@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Escuta dos Ecos",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: vestígio acessível; minutos. Efeito: uma pista útil do passado, incompleta. Contramedida: fonte alterada fornece versões conflitantes; investigação cruzada.</p>",
+      "difficulty": 1,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Selo de Vigília",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: passagem pequena; 1 cena. Efeito: impede influência menor identificada. Contramedida: romper foco, alteração física, efeito superior avisado.</p>",
+      "difficulty": 1,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Véu de Fuligem",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: 1 setor; 1 cena. Efeito: oculta deslocamento, sem dano. Contramedida: vento, deslocamento, observação indireta.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Condutor Galvânico",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: aparelho próximo; 1 teste. Efeito: +1d6 na próxima Engenharia elegível. Contramedida: dispositivo existente e funcional.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Lanterna do Outro Lado",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: 1 setor; instante. Efeito: revela sinal de presença invisível. Contramedida: não torna alvo vulnerável sem contramedida.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Silêncio dos Cabos",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: circuito visto; 1 cena. Efeito: interrompe transmissão éterica específica. Contramedida: circuito redundante, reparo ou fonte externa.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Fenda na Armadura",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: 1 alvo; próximo golpe. Efeito: revela/aplica fraqueza: RD −2 no golpe apto. Contramedida: não acumula com PERF ou fraqueza já aplicada.</p>",
+      "difficulty": 3,
+      "cost": 2,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Tranca do Abismo",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: brecha menor; 1 cena. Efeito: reduz até 2 segmentos de relógio de manifestação <strong>local</strong>. Contramedida: exige foco e acesso; brechas colossais têm etapas.</p>",
+      "difficulty": 3,
+      "cost": 2,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Chamada do Nome",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: registro pessoal; instante. Efeito: verifica contradição entre duas identidades. Contramedida: não prova verdade sem fontes independentes.</p>",
+      "difficulty": 1,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Parede de Cinzas",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: passagem visível; 1 rodada. Efeito: cria cobertura parcial contra ataque comum. Contramedida: contornar, vento, romper suporte.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Desvio do Ponteiro",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: relógio <strong>não letal</strong>; 1 uso. Efeito: atrasa <strong>1 segmento</strong> de relógio por ação preparada. Contramedida: falha altera outro aspecto; não retrocede tempo.</p>",
+      "difficulty": 2,
+      "cost": 1,
+      "active": false,
+      "spent": false
+    }
+  },
+  {
+    "name": "Testemunho Guardado",
+    "type": "ritual",
+    "img": "systems/polvora-e-eter/assets/ui/crystal.webp",
+    "system": {
+      "description": "<p>Alvo: prova material; 1 missão. Efeito: mantém cópia de um registro contra apagamento local. Contramedida: cópia deve ter portador e local de armazenamento.</p>",
+      "difficulty": 3,
+      "cost": 2,
+      "active": false,
+      "spent": false
+    }
+  }
+]
