@@ -1,8 +1,8 @@
 {
   "id": "polvora-e-eter",
   "title": "Pólvora & Éter",
-  "description": "Pólvora & Éter — correção do fluxo de rolagens e chat, desativação de arremesso manual no Dice So Nice e modo seguro por cliente.",
-  "version": "0.2.9",
+  "description": "Pólvora & Éter — hotfix do dado d6: faces em tela cheia com imagens finais, som obrigatório ao sair 1 e reforço da integração com Dice So Nice/chat.",
+  "version": "0.2.10",
   "authors": [
     {
       "name": "tulioscost",

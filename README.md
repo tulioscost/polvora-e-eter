@@ -1,3 +1,5 @@
+> Atualização atual: **v0.2.10** — hotfix das faces do dado e do som ao tirar 1.
+
 # PÓLVORA & ÉTER — Foundry VTT 14 · v0.2.8
 
 **Estado:** alfa. A v0.2.8 atualiza 381 ícones individuais com artes por categoria, apresenta cartões operacionais para magias/rituais e aplica o dado d6 de Éter às rolagens do sistema também para jogadores não-GM.
