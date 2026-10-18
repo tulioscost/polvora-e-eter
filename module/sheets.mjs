@@ -9,7 +9,7 @@ async function rollPool(actor,dice,difficulty,label,info={}){
   const result=evaluateFaces(faces,difficulty);
   const status=result.passed?'SUCESSO':'FALHA';
   const damage=info.damage!==undefined && result.passed?damageAfterArmor(info.damage,Math.min(result.impetus,2),info.rd||0):null;
-  const block=`<div class="pe-transmission"><div class="pe-radio-label">◉ CANAL TÁTICO · TRANSMISSÃO CRIPTOGRAFADA</div><strong>${esc(label)}</strong><div>Reserva ${dice}d6 • D${difficulty} • <b class="${result.passed?'pe-pass':'pe-fail'}">${status}</b></div><div>Sucessos: ${result.successes} | Ímpetos: ${result.impetus}</div>${damage!==null?`<div>Dano potencial: <strong>${damage}</strong> (bônus de Ímpeto +${Math.min(result.impetus,2)}, a critério do jogador; RD indicada ${info.rd||0}).</div>`:''}<small>Ataque não aplica dano automaticamente. O Narrador confirma alvo, RD, circunstâncias e consumo de Ímpetos.</small></div>`;
+  const block=`<div class="pe-transmission"><div class="pe-radio-label">◉ CANAL TÁTICO · TRANSMISSÃO CRIPTOGRAFADA</div><strong>${esc(label)}</strong><div>Reserva ${dice}d6 • D${difficulty} • <b class="${result.passed?'pe-pass':'pe-fail'}">${status}</b></div><div>Sucessos: ${result.successes} | Ímpetos: ${result.impetus}</div>${damage!==null?`<div>Dano potencial: <strong>${damage}</strong> (bônus de Ímpeto +${Math.min(result.impetus,2)}, a critério do jogador; RD indicada ${info.rd||0}).</div>`:''}<small>Resultado tático. Use o painel de dano na ficha do alvo para aplicar o valor final automaticamente com RD.</small></div>`;
   await r.toMessage({speaker:ChatMessage.getSpeaker({actor}),flavor:block,flags:{[S]:{diceRoll:true}}});
   return result;
 }
@@ -18,7 +18,7 @@ function itemsOf(actor,type){return actor.items.filter(x=>x.type===type).map(x=>
 const itemActions={
   async itemOpen(event,target){const item=this.document.items?.get(target.closest('[data-item-id]')?.dataset.itemId); if(item) item.sheet?.render({force:true});},
   async itemDelete(event,target){if(!this.isEditable)return;const id=target.closest('[data-item-id]')?.dataset.itemId;if(!id)return;const yes=await foundry.applications.api.DialogV2.confirm({window:{title:'Excluir item'},content:'Excluir este item do personagem?'});if(yes)await this.document.deleteEmbeddedDocuments('Item',[id]);},
-  async itemEquip(event,target){if(!this.isEditable)return;const it=this.document.items?.get(target.closest('[data-item-id]')?.dataset.itemId);if(it)await it.update({'system.equipped':!it.system.equipped});},
+  async itemEquip(event,target){if(!this.isEditable)return;const it=this.document.items?.get(target.closest('[data-item-id]')?.dataset.itemId);if(!it)return;const equipping=!it.system.equipped; if(it.type==='armadura' && equipping){const others=this.document.items.filter(x=>x.type==='armadura'&&x.id!==it.id&&x.system.equipped).map(x=>({_id:x.id,'system.equipped':false})); if(others.length) await this.document.updateEmbeddedDocuments('Item',others);} await it.update({'system.equipped':equipping}); if(it.type==='armadura') tell(`${it.name}: RD atualizada automaticamente para ${this.document.system.rd}.`,'info');},
   async itemToggle(event,target){if(!this.isEditable)return;const it=this.document.items?.get(target.closest('[data-item-id]')?.dataset.itemId);if(it){const state=!it.system.active;await it.update({'system.active':state});tell(`${it.name}: ${state?'ativado':'desativado'}. Efeitos condicionais exigem a situação descrita no item.`, 'info');}},
   async itemUse(event,target){
    if(!this.document.isOwner)return;
@@ -80,6 +80,26 @@ export class PEActorSheet extends foundry.applications.api.HandlebarsApplication
    async reload(event,target){const it=this.document.items.get(target.closest('[data-item-id]')?.dataset.itemId);if(!it||!this.document.isOwner)return;
      if((it.system.ammo.reserve||0)<=0)return tell('Sem carregadores de reserva.');
      await it.update({'system.ammo.magazine':it.system.ammo.capacity,'system.ammo.reserve':it.system.ammo.reserve-1});
+   },
+
+   async applyDamage(event,target){
+     if(!this.document.isOwner || this.document.type==='esquadrao') return;
+     const input=this.element.querySelector('[data-incoming-damage]');
+     const raw=Math.max(0, Number(input?.value||0));
+     const final=Math.max(0, raw - (Number(this.document.system.rd)||0));
+     const pv=Math.max(0, (Number(this.document.system.pv.value)||0) - final);
+     await this.document.update({'system.pv.value':pv});
+     await ChatMessage.create({speaker:ChatMessage.getSpeaker({actor:this.document}),content:`<div class="pe-transmission"><div class="pe-radio-label">◉ RELATÓRIO DE IMPACTO</div><strong>${esc(this.document.name)}</strong><div>Dano bruto: <b>${raw}</b> • RD aplicada: <b>${Number(this.document.system.rd)||0}</b> • Dano final: <b>${final}</b></div><div>PV restantes: <b>${pv}</b> / ${this.document.system.pv.max}</div></div>`});
+     if(input) input.value='';
+   },
+   async healDamage(event,target){
+     if(!this.document.isOwner || this.document.type==='esquadrao') return;
+     const input=this.element.querySelector('[data-healing]');
+     const amount=Math.max(0, Number(input?.value||0));
+     const pv=Math.min(Number(this.document.system.pv.max)||0, (Number(this.document.system.pv.value)||0) + amount);
+     await this.document.update({'system.pv.value':pv});
+     await ChatMessage.create({speaker:ChatMessage.getSpeaker({actor:this.document}),content:`<div class="pe-transmission"><div class="pe-radio-label">◉ RELATÓRIO MÉDICO</div><strong>${esc(this.document.name)}</strong><div>Recuperação registrada: <b>${amount}</b></div><div>PV atuais: <b>${pv}</b> / ${this.document.system.pv.max}</div></div>`});
+     if(input) input.value='';
    },
    async cast(event,target){const a=this.document,it=a.items.get(target.closest('[data-item-id]')?.dataset.itemId);if(!it||!a.isOwner)return;
      const cost=Number(it.system.cost)||1;

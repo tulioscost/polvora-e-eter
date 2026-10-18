@@ -1,8 +1,8 @@
 {
   "id": "polvora-e-eter",
   "title": "Pólvora & Éter",
-  "description": "Pólvora & Éter 0.2.1: correção da ficha militar no Foundry 14, modelos tipados, compêndios e diário.",
-  "version": "0.2.1",
+  "description": "Pólvora & Éter 0.2.2: melhorias visuais e mecânicas: dados Dice So Nice obrigatórios, RD automática, dano aplicado e visor de Éter.",
+  "version": "0.2.2",
   "authors": [
     {
       "name": "tulioscost",

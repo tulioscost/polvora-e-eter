@@ -6,7 +6,7 @@ import {registerDiceHooks} from './dice.mjs';
 import {registerDiaryHooks,ensureExistingDiaries,ensureCharacterDiary} from './journal.mjs';
 import * as rules from './rules.mjs';
 const ID='polvora-e-eter';
-const VERSION='0.2.1';
+const VERSION='0.2.2';
 const SHEET_ID='polvora-e-eter.PEActorSheet';
 const SHEET_TYPES=['personagem','ameaca','esquadrao'];
 
