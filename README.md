@@ -93,3 +93,11 @@ A ficha agora usa **Créditos de Campanha (CR)**. O Mestre credita ou debita val
 ## Espécies e Soldo — v0.2.5
 
 A ficha do personagem tem campo **Espécie** (Humano, Sanguessuga, Licano) e aba de características. Os traços serão gerados no inventário, sem excluir itens manuais. Licanos se transformam por ação na aba Espécie. Na ficha Esquadrão, um GM marca quem participou, registra a saída e encerra a missão no quadro de tesouraria. O programa credita o CR devido uma única vez por missão/participante. Consulte `SUPLEMENTO_ESPECIES_E_SOLDOS_025.md`.
+
+
+## Atualização v0.2.6
+Cena inicial forçada com a arte “VOCÊ FOI CONVOCADO!”, integração do d6 com faces metálicas anexadas ao projeto e som de falha atualizado para resultados 1.
+
+
+## Atualização v0.2.7
+Inclui ícones individuais para os itens, revisão uniforme das seis faces do d6, seleção automática do preset do dado de Éter no Dice So Nice e expansão das descrições de magias e rituais.
