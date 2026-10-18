@@ -1,8 +1,8 @@
 {
   "id": "polvora-e-eter",
   "title": "Pólvora & Éter",
-  "description": "Pólvora & Éter: ícones por categorias com estética dieselpunk, catálogo de magias e rituais com cartões de grimório militar e aparência d6 garantida em rolagens do sistema para GM e jogadores.",
-  "version": "0.2.8",
+  "description": "Pólvora & Éter — correção do fluxo de rolagens e chat, desativação de arremesso manual no Dice So Nice e modo seguro por cliente.",
+  "version": "0.2.9",
   "authors": [
     {
       "name": "tulioscost",

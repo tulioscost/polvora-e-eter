@@ -119,3 +119,7 @@ Inclui ícones individuais para os itens, revisão uniforme das seis faces do d6
 
 ## Atualização v0.2.8
 Ícones categoriais refinados, cartões de magias/rituais com texto expansível e dados de Éter em todos os testes d6 do sistema, inclusive jogadores não-GM.
+
+
+## Hotfix v0.2.9 — Dados presos / Chat ausente
+As rolagens do sistema agora levam `dice-so-nice.interactive: false` antes de criar a mensagem, para impedir que o módulo aguarde um arremesso manual. Se o Dice So Nice continuar travando, use **Configurações do Sistema > Modo seguro das rolagens**; o chat continuará com os resultados, sem 3D. Para diagnóstico: `game.system.pe.diagnoseDice()`; para testar uma mensagem sem animação: `await game.system.pe.testDice({safe:true})`.
