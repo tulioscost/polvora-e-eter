@@ -1,3 +1,17 @@
+# PÓLVORA & ÉTER — Foundry VTT 14 · v0.2.8
+
+**Estado:** alfa. A v0.2.8 atualiza 381 ícones individuais com artes por categoria, apresenta cartões operacionais para magias/rituais e aplica o dado d6 de Éter às rolagens do sistema também para jogadores não-GM.
+
+**Instalação via GitHub:** envie o conteúdo do ZIP de código-fonte para a raiz de `tulioscost/polvora-e-eter`; em **Actions → Publicar sistema Foundry**, execute o workflow. Após a Release, instale pelo manifesto:
+
+`https://github.com/tulioscost/polvora-e-eter/releases/latest/download/system.json`
+
+**Dependências:** `dice-so-nice` e `dice-calculator`. `setRoleDefaults('basic')` configura o d6 inicial dos novos jogadores, enquanto as rolagens do sistema usam a aparência customizada por `Roll.dice[].options.appearance`, inclusive para jogadores não-GM que já possuem dados personalizados. Isso não altera suas demais rolagens nem redefine configurações globais do módulo.
+
+**Migração:** preserve o mundo; a atualização de catálogos modifica apenas ícones padrão e descrições arcanas antigas. Ícones personalizados são mantidos. Faça backup antes de atualizar.
+
+---
+
 **Correção 0.2.1:** consulte [DIAGNOSTICO_FICHA.md](DIAGNOSTICO_FICHA.md).
 
 # PÓLVORA & ÉTER — Sistema para Foundry VTT v0.2.0
@@ -101,3 +115,7 @@ Cena inicial forçada com a arte “VOCÊ FOI CONVOCADO!”, integração do d6 
 
 ## Atualização v0.2.7
 Inclui ícones individuais para os itens, revisão uniforme das seis faces do d6, seleção automática do preset do dado de Éter no Dice So Nice e expansão das descrições de magias e rituais.
+
+
+## Atualização v0.2.8
+Ícones categoriais refinados, cartões de magias/rituais com texto expansível e dados de Éter em todos os testes d6 do sistema, inclusive jogadores não-GM.

@@ -1,11 +1,10 @@
-# Pólvora & Éter v0.2.7
+# Pólvora & Éter — v0.2.8
 
-## Destaques
-- Ícones individuais criados para os itens, baseados nos nomes dos registros de catálogo.
-- Dado d6 revisado visualmente com faces mais uniformes.
-- Preset do d6 de Éter configurado automaticamente como padrão no Dice So Nice.
-- Descrições de magias e rituais expandidas com foco tático e ficcional.
+## Novidades
+- **381 ícones únicos por registro**, refinados por categoria (arsenal, armaduras, equipamentos, farmácia, munições, magias, rituais, talentos, doutrinas, espécies e ativos); placas dieselpunk com nome e símbolo próprio.
+- **Magias e rituais em cartões de dossiê militar-ocultista**: imagem maior, categoria, dificuldade, custo de Éter, sinopse e painel expansível de regras, preparação, limites e contramedidas.
+- **Dice So Nice**: registro usando `DiceSystem.setRoleDefaults('basic')` (API oficial); cada rolagem d6 do sistema recebe `dice.options.appearance.system = 'polvora-eter'`, inclusive usuários não-GM e usuários com aparência previamente personalizada.
+- Migração conservadora de ícones antigos, mantendo ícones personalizados pelo Mestre, quando configurados fora das pastas padrão.
 
-## Migração
-- Catálogos de mundo existentes recebem atualização conservadora de ícones e descrições arcanas.
-- Itens já presentes em atores também recebem, quando necessário, preço, peso, tipo de munição, ícone e descrição expandida.
+## Testes
+- Estrutura, sintaxe de módulos, integridade do catálogo de ícones, HTML da ficha e simulações de hooks da API verificadas localmente. A confirmação em Foundry VTT 14.369 continua necessária.
